@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Bootie Docs</title>
+    <link>http://key-amb.github.io/bootie-docs-demo/post/</link>
+    <description>Recent content in Posts on Bootie Docs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 19 Apr 2015 19:21:30 +0900</lastBuildDate>
+    <atom:link href="http://key-amb.github.io/bootie-docs-demo/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>first</title>
+      <link>http://key-amb.github.io/bootie-docs-demo/post/first/</link>
+      <pubDate>Sun, 19 Apr 2015 19:21:30 +0900</pubDate>
+      
+      <guid>http://key-amb.github.io/bootie-docs-demo/post/first/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

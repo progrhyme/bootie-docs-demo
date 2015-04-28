@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Bootie Docs</title>
+    <link>http://key-amb.github.io/bootie-docs-demo/</link>
+    <description>Recent content on Bootie Docs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 19 Apr 2015 19:21:30 +0900</lastBuildDate>
+    <atom:link href="http://key-amb.github.io/bootie-docs-demo/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>first</title>
+      <link>http://key-amb.github.io/bootie-docs-demo/post/first/</link>
+      <pubDate>Sun, 19 Apr 2015 19:21:30 +0900</pubDate>
+      
+      <guid>http://key-amb.github.io/bootie-docs-demo/post/first/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>about</title>
+      <link>http://key-amb.github.io/bootie-docs-demo/about/</link>
+      <pubDate>Sun, 19 Apr 2015 19:17:21 +0900</pubDate>
+      
+      <guid>http://key-amb.github.io/bootie-docs-demo/about/</guid>
+      <description>
+
+&lt;h2 id=&#34;about:6083a88ee3411b0d17ce02d738f69d47&#34;&gt;About&lt;/h2&gt;
+
+&lt;p&gt;hugo-docs-sample&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

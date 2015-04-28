@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  <url>
+    <loc>http://key-amb.github.io/bootie-docs-demo/</loc>
+    <lastmod>2015-04-19T19:21:30+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://key-amb.github.io/bootie-docs-demo/post/first/</loc>
+    <lastmod>2015-04-19T19:21:30+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://key-amb.github.io/bootie-docs-demo/about/</loc>
+    <lastmod>2015-04-19T19:17:21+09:00</lastmod>
+  </url>
+  
+</urlset>
