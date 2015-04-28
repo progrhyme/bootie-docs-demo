@@ -1,3 +1,5 @@
-baseurl = "http://yourSiteHere/"
+baseurl = "http://key-amb.github.io/bootie-docs-demo"
 languageCode = "en-us"
-title = "My New Hugo Site"
+title = "Bootie Docs"
+theme = "bootie-docs"
+
