@@ -6,8 +6,20 @@
     <description>Recent content on Bootie Docs</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 19 Apr 2015 19:21:30 +0900</lastBuildDate>
+    <lastBuildDate>Tue, 28 Apr 2015 15:58:07 +0900</lastBuildDate>
     <atom:link href="http://key-amb.github.io/bootie-docs-demo/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Getting Started</title>
+      <link>http://key-amb.github.io/bootie-docs-demo/quickstart/</link>
+      <pubDate>Tue, 28 Apr 2015 15:58:07 +0900</pubDate>
+      
+      <guid>http://key-amb.github.io/bootie-docs-demo/quickstart/</guid>
+      <description>
+
+&lt;h2 id=&#34;configure:09c84f91027bd18b03251c05a0da4abb&#34;&gt;Configure&lt;/h2&gt;
+</description>
+    </item>
     
     <item>
       <title>first</title>

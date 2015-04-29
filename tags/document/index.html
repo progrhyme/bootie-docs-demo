@@ -7,12 +7,12 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="alternate" href="/index.xml" type="application/rss+xml" title="Bootie Docs">
 		<link rel="icon" href="http://getbootstrap.com/favicon.ico">
-		<title>about - Bootie Docs</title>
+		<title>Document - Bootie Docs</title>
 		
-		<link rel="stylesheet" href="http://key-amb.github.io/bootie-docs-demo/css/bootstrap.min.css">
-		<link rel="stylesheet" href="http://key-amb.github.io/bootie-docs-demo/css/bootstrap-theme.css">
-		<link rel="stylesheet" href="http://key-amb.github.io/bootie-docs-demo/css/theme.css">
-		<link rel="stylesheet" href="http://key-amb.github.io/bootie-docs-demo/css/bootie-docs.css">
+		<link rel="stylesheet" href="http://localhost:1313//css/bootstrap.min.css">
+		<link rel="stylesheet" href="http://localhost:1313//css/bootstrap-theme.css">
+		<link rel="stylesheet" href="http://localhost:1313//css/theme.css">
+		<link rel="stylesheet" href="http://localhost:1313//css/bootie-docs.css">
 	</head>
 
 <body role="document">
@@ -27,21 +27,21 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-				<a class="navbar-brand" href="http://key-amb.github.io/bootie-docs-demo/">Bootie Docs</a>
+				<a class="navbar-brand" href="http://localhost:1313//">Bootie Docs</a>
 			</div>
 			<div id="navbar" class="navbar-collapse collapse">
 				<ul class="nav navbar-nav">
 					<li ><a href="/">Home</a></li>
 			
 				
-					<li><a href="http://key-amb.github.io/bootie-docs-demo/quickstart">Quickstart</a></li>
+					<li><a href="http://localhost:1313//quickstart">Quickstart</a></li>
 				
 			
 				<li class="dropdown">
 						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Categories<span class="caret"></span></a>
 						<ul class="dropdown-menu" role="menu">
 						
-							<li><a href="http://key-amb.github.io/bootie-docs-demo/categories/development">Development</a></li>
+							<li><a href="http://localhost:1313//categories/development">Development</a></li>
 						
 						</ul>
 					</li>				</ul>
@@ -54,47 +54,35 @@
 <div class="row">
 	<div class="col-sm-8 doc-main">
 		<main role="main">
-			<article>
-				<a id="title"></a>
-				<h1 class="doc-entry-title">about</h1>
-				<div class="doc-entry-meta">
-					<span><time datetime="2015-04-19">April 19, 2015</time></span>
-				</div>
-				<section>
-					
-
-<h2 id="about:6083a88ee3411b0d17ce02d738f69d47">About</h2>
-
-<p>hugo-docs-sample</p>
-
-				</section>
-			</article>
+			<div class="doc-list-header">
+				<h1>Document</h1>
+			</div>
+			<div class="doc-list-entry">
+	
+				<a class="doc-entry" href="/quickstart/">
+					<h3 class="doc-entry-title">Getting Started</h3>
+					<p class="doc-entry-meta"><time datetime="2015-04-28">April 28, 2015</time></p>
+				</a>
+	
+			</div>
 		</main>
 	</div> 
 
 	
 <div class="col-sm-3 col-sm-offset-1 doc-sidebar">
 	<div class="sidebar-module">
-		<div class="sidebar-toc">
-			<h4>Table of Contents</h4>
-			<ul>
-				<li><strong><a href="#title">about</a></strong></li>
-			</ul>
-			<nav id="TableOfContents">
-<ul>
-<li>
-<ul>
-<li><a href="#about:6083a88ee3411b0d17ce02d738f69d47">About</a></li>
-</ul></li>
-</ul>
-</nav>
-		</div>
+		<h4>Categories</h4>
+		<ul class="list-unstyled">
+		
+			<li><a class="tag-item" href="http://localhost:1313//categories/development">development</a></li>
+		
+		</ul>
 	</div>
 	<div class="sidebar-module">
 		<h4>Tags</h4>
 		<div class="tag-box">
 		
-			<a class="tag-item" href="http://key-amb.github.io/bootie-docs-demo/tags/general">general</a>
+			<a class="tag-item" href="http://localhost:1313//tags/document">document</a>
 		
 		</div>
 	</div>
@@ -125,5 +113,8 @@
 
 <script src="/js/ie10-viewport-bug-workaround.js"></script>
 
-</body>
+<script>document.write('<script src="http://'
+        + (location.host || 'localhost').split(':')[0]
+		+ ':1313/livereload.js?mindelay=10"></'
+        + 'script>')</script></body>
 </html>
