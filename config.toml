@@ -8,3 +8,4 @@ theme = "bootie-docs"
   withTopContent = true
   topContentTitle = "Overview"
   withSitePosts = true
+  mainMenu = ["quickstart"]
