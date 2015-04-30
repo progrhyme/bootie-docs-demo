@@ -6,4 +6,5 @@ theme = "bootie-docs"
 [params]
   description = "A simple Hugo theme for documentation."
   withSitePosts = true
-  mainMenu = ["quickstart"]
+  mainMenu = ["about", "usage"]
+  #noCategoryLink = true
