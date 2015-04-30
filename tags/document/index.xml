@@ -6,8 +6,40 @@
     <description>Recent content in Document on Bootie Docs</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 28 Apr 2015 15:58:07 +0900</lastBuildDate>
+    <copyright>Copyright (c) 2015, YASUTAKE Kiyoshi; All rights reserved.</copyright>
+    <lastBuildDate>Thu, 30 Apr 2015 17:11:21 +0900</lastBuildDate>
     <atom:link href="http://key-amb.github.io/bootie-docs-demo/tags/document/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>About</title>
+      <link>http://key-amb.github.io/bootie-docs-demo/about/</link>
+      <pubDate>Thu, 30 Apr 2015 17:11:21 +0900</pubDate>
+      
+      <guid>http://key-amb.github.io/bootie-docs-demo/about/</guid>
+      <description>
+
+&lt;h2 id=&#34;version:6083a88ee3411b0d17ce02d738f69d47&#34;&gt;Version&lt;/h2&gt;
+
+&lt;p&gt;No version released.&lt;/p&gt;
+
+&lt;h2 id=&#34;features:6083a88ee3411b0d17ce02d738f69d47&#34;&gt;Features&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;To configure items in header navigation bar&lt;/li&gt;
+&lt;li&gt;Syntax highlighting by &lt;strong&gt;highlight.js&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;dependencies:6083a88ee3411b0d17ce02d738f69d47&#34;&gt;Dependencies&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://getbootstrap.com/&#34;&gt;Bootstrap&lt;/a&gt; &amp;hellip; Well-known CSS framework.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://jquery.com/&#34;&gt;jQuery&lt;/a&gt; &amp;hellip; Requried by &lt;em&gt;Bootstrap&lt;/em&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://highlightjs.org/&#34;&gt;highlight.js&lt;/a&gt; &amp;hellip; For syntax highlighting.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;See also README of &lt;a href=&#34;https://github.com/key-amb/hugo-theme-bootie-docs&#34;&gt;Bootie Docs&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Usage</title>
@@ -29,24 +61,50 @@ by configuring it as &lt;code&gt;params.mainMenu&lt;/code&gt; in your &lt;code&g
   mainMenu = [&amp;quot;&amp;lt;your-page-name&amp;gt;&amp;quot;, ...]
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;Then you can access the page by link in navigation bar on top of the site.&lt;/p&gt;
+&lt;p&gt;Then you can access the page by link in navigation bar at header of the site.&lt;/p&gt;
 
 &lt;p&gt;It is recommended to create the page on top of your &lt;code&gt;content/&lt;/code&gt; directory if you
 want to access it by navigation bar.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>About</title>
-      <link>http://key-amb.github.io/bootie-docs-demo/about/</link>
-      <pubDate>Sun, 19 Apr 2015 19:17:21 +0900</pubDate>
-      
-      <guid>http://key-amb.github.io/bootie-docs-demo/about/</guid>
-      <description>
 
-&lt;h2 id=&#34;about:6083a88ee3411b0d17ce02d738f69d47&#34;&gt;About&lt;/h2&gt;
+&lt;h2 id=&#34;categorize-and-tagging-pages:dc32fe45042973266ca60588597e0b66&#34;&gt;Categorize and Tagging pages&lt;/h2&gt;
 
-&lt;p&gt;hugo-docs-sample&lt;/p&gt;
+&lt;p&gt;You can add one or more &lt;em&gt;categories&lt;/em&gt; and &lt;em&gt;tags&lt;/em&gt; to pages.&lt;/p&gt;
+
+&lt;p&gt;All category list appears as drop-down menu at the header navigation bar.&lt;br /&gt;
+If you set &lt;code&gt;params.noCategoryLink&lt;/code&gt; true in your &lt;code&gt;config.toml&lt;/code&gt;, the drop-down menu disappears:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;[params]
+  noCategoryLink = true
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;other-configurations:dc32fe45042973266ca60588597e0b66&#34;&gt;Other Configurations&lt;/h2&gt;
+
+&lt;p&gt;Here is an example of &lt;code&gt;config.toml&lt;/code&gt; including all customizable parameters for this
+theme:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;baseurl = &amp;quot;http://your-site&amp;quot;
+title = &amp;quot;Your Site&amp;quot;
+theme = &amp;quot;bootie-docs&amp;quot;
+copyright = &amp;quot;Copyright (c) 2015, Your Name; All rights reserved.&amp;quot;
+
+[params]
+  description = &amp;quot;Brief description for your site.&amp;quot;
+  withSitePosts = true
+  mainMenu = [&amp;quot;about&amp;quot;, &amp;quot;usage&amp;quot;]
+  #noCategoryLink = true
+  repositoryUrl = &amp;quot;http://your-repository-url&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;strong&gt;Title&lt;/strong&gt; is shown in header navigation bar and on top page.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Copyright&lt;/strong&gt; is shown in footer (optional).&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Params.description&lt;/strong&gt; is shown on top page.&lt;/p&gt;
+
+&lt;p&gt;When &lt;strong&gt;params.withSitePosts&lt;/strong&gt; is set true, a link appears on top page which leads
+you to the listing page of the posts in your site under the &lt;code&gt;post/&lt;/code&gt; directory.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Params.repositoryUrl&lt;/strong&gt; is shown in footer (optional).&lt;/p&gt;
 </description>
     </item>
     

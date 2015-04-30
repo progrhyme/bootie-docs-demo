@@ -6,16 +6,18 @@
     <description>Recent content in Posts on Bootie Docs</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 19 Apr 2015 19:21:30 +0900</lastBuildDate>
+    <copyright>Copyright (c) 2015, YASUTAKE Kiyoshi; All rights reserved.</copyright>
+    <lastBuildDate>Thu, 30 Apr 2015 16:21:30 +0900</lastBuildDate>
     <atom:link href="http://key-amb.github.io/bootie-docs-demo/post/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>first</title>
+      <title>My first post</title>
       <link>http://key-amb.github.io/bootie-docs-demo/post/first/</link>
-      <pubDate>Sun, 19 Apr 2015 19:21:30 +0900</pubDate>
+      <pubDate>Thu, 30 Apr 2015 16:21:30 +0900</pubDate>
       
       <guid>http://key-amb.github.io/bootie-docs-demo/post/first/</guid>
-      <description></description>
+      <description>&lt;p&gt;blah blah blah.&lt;/p&gt;
+</description>
     </item>
     
   </channel>

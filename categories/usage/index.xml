@@ -6,6 +6,7 @@
     <description>Recent content in Usage on Bootie Docs</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
+    <copyright>Copyright (c) 2015, YASUTAKE Kiyoshi; All rights reserved.</copyright>
     <lastBuildDate>Tue, 28 Apr 2015 15:58:07 +0900</lastBuildDate>
     <atom:link href="http://key-amb.github.io/bootie-docs-demo/categories/usage/index.xml" rel="self" type="application/rss+xml" />
     
@@ -29,10 +30,50 @@ by configuring it as &lt;code&gt;params.mainMenu&lt;/code&gt; in your &lt;code&g
   mainMenu = [&amp;quot;&amp;lt;your-page-name&amp;gt;&amp;quot;, ...]
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;Then you can access the page by link in navigation bar on top of the site.&lt;/p&gt;
+&lt;p&gt;Then you can access the page by link in navigation bar at header of the site.&lt;/p&gt;
 
 &lt;p&gt;It is recommended to create the page on top of your &lt;code&gt;content/&lt;/code&gt; directory if you
 want to access it by navigation bar.&lt;/p&gt;
+
+&lt;h2 id=&#34;categorize-and-tagging-pages:dc32fe45042973266ca60588597e0b66&#34;&gt;Categorize and Tagging pages&lt;/h2&gt;
+
+&lt;p&gt;You can add one or more &lt;em&gt;categories&lt;/em&gt; and &lt;em&gt;tags&lt;/em&gt; to pages.&lt;/p&gt;
+
+&lt;p&gt;All category list appears as drop-down menu at the header navigation bar.&lt;br /&gt;
+If you set &lt;code&gt;params.noCategoryLink&lt;/code&gt; true in your &lt;code&gt;config.toml&lt;/code&gt;, the drop-down menu disappears:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;[params]
+  noCategoryLink = true
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;other-configurations:dc32fe45042973266ca60588597e0b66&#34;&gt;Other Configurations&lt;/h2&gt;
+
+&lt;p&gt;Here is an example of &lt;code&gt;config.toml&lt;/code&gt; including all customizable parameters for this
+theme:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;baseurl = &amp;quot;http://your-site&amp;quot;
+title = &amp;quot;Your Site&amp;quot;
+theme = &amp;quot;bootie-docs&amp;quot;
+copyright = &amp;quot;Copyright (c) 2015, Your Name; All rights reserved.&amp;quot;
+
+[params]
+  description = &amp;quot;Brief description for your site.&amp;quot;
+  withSitePosts = true
+  mainMenu = [&amp;quot;about&amp;quot;, &amp;quot;usage&amp;quot;]
+  #noCategoryLink = true
+  repositoryUrl = &amp;quot;http://your-repository-url&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;strong&gt;Title&lt;/strong&gt; is shown in header navigation bar and on top page.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Copyright&lt;/strong&gt; is shown in footer (optional).&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Params.description&lt;/strong&gt; is shown on top page.&lt;/p&gt;
+
+&lt;p&gt;When &lt;strong&gt;params.withSitePosts&lt;/strong&gt; is set true, a link appears on top page which leads
+you to the listing page of the posts in your site under the &lt;code&gt;post/&lt;/code&gt; directory.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Params.repositoryUrl&lt;/strong&gt; is shown in footer (optional).&lt;/p&gt;
 </description>
     </item>
     

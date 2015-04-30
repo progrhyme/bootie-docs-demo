@@ -83,10 +83,50 @@ by configuring it as <code>params.mainMenu</code> in your <code>config.toml</cod
   mainMenu = [&quot;&lt;your-page-name&gt;&quot;, ...]
 </code></pre>
 
-<p>Then you can access the page by link in navigation bar on top of the site.</p>
+<p>Then you can access the page by link in navigation bar at header of the site.</p>
 
 <p>It is recommended to create the page on top of your <code>content/</code> directory if you
 want to access it by navigation bar.</p>
+
+<h2 id="categorize-and-tagging-pages:dc32fe45042973266ca60588597e0b66">Categorize and Tagging pages</h2>
+
+<p>You can add one or more <em>categories</em> and <em>tags</em> to pages.</p>
+
+<p>All category list appears as drop-down menu at the header navigation bar.<br />
+If you set <code>params.noCategoryLink</code> true in your <code>config.toml</code>, the drop-down menu disappears:</p>
+
+<pre><code>[params]
+  noCategoryLink = true
+</code></pre>
+
+<h2 id="other-configurations:dc32fe45042973266ca60588597e0b66">Other Configurations</h2>
+
+<p>Here is an example of <code>config.toml</code> including all customizable parameters for this
+theme:</p>
+
+<pre><code>baseurl = &quot;http://your-site&quot;
+title = &quot;Your Site&quot;
+theme = &quot;bootie-docs&quot;
+copyright = &quot;Copyright (c) 2015, Your Name; All rights reserved.&quot;
+
+[params]
+  description = &quot;Brief description for your site.&quot;
+  withSitePosts = true
+  mainMenu = [&quot;about&quot;, &quot;usage&quot;]
+  #noCategoryLink = true
+  repositoryUrl = &quot;http://your-repository-url&quot;
+</code></pre>
+
+<p><strong>Title</strong> is shown in header navigation bar and on top page.</p>
+
+<p><strong>Copyright</strong> is shown in footer (optional).</p>
+
+<p><strong>Params.description</strong> is shown on top page.</p>
+
+<p>When <strong>params.withSitePosts</strong> is set true, a link appears on top page which leads
+you to the listing page of the posts in your site under the <code>post/</code> directory.</p>
+
+<p><strong>Params.repositoryUrl</strong> is shown in footer (optional).</p>
 
 				</section>
 			</article>
@@ -106,6 +146,8 @@ want to access it by navigation bar.</p>
 <li>
 <ul>
 <li><a href="#add-more-document-pages:dc32fe45042973266ca60588597e0b66">Add more document pages</a></li>
+<li><a href="#categorize-and-tagging-pages:dc32fe45042973266ca60588597e0b66">Categorize and Tagging pages</a></li>
+<li><a href="#other-configurations:dc32fe45042973266ca60588597e0b66">Other Configurations</a></li>
 </ul></li>
 </ul>
 </nav>
@@ -137,8 +179,8 @@ want to access it by navigation bar.</p>
 </div> 
 
 <footer class="doc-footer">
-	
-	
+	<p class="doc-footer-em">Browse <strong><a href="https://github.com/key-amb/bootie-docs-demo/">Repository</a></strong></p>
+	<p>Copyright (c) 2015, YASUTAKE Kiyoshi; All rights reserved.</p>
 	<p>Powered by <strong><a href="https://github.com/key-amb/hugo-theme-bootie-docs">Bootie Docs</a></strong> - theme for <a href="http://gohugo.io/">Hugo</a> by <a href="https://github.com/key-amb/">key-amb</a>.</p>
 </footer>
 
