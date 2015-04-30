@@ -2,9 +2,11 @@ baseurl = "http://key-amb.github.io/bootie-docs-demo"
 languageCode = "en-us"
 title = "Bootie Docs"
 theme = "bootie-docs"
+copyright = "Copyright (c) 2015, YASUTAKE Kiyoshi; All rights reserved."
 
 [params]
   description = "A simple Hugo theme for documentation."
   withSitePosts = true
   mainMenu = ["about", "usage"]
   #noCategoryLink = true
+  repositoryUrl = "https://github.com/key-amb/bootie-docs-demo/"
