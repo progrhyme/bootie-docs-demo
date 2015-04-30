@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Usage on Bootie Docs</title>
+    <link>http://key-amb.github.io/bootie-docs-demo/categories/usage/</link>
+    <description>Recent content in Usage on Bootie Docs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 28 Apr 2015 15:58:07 +0900</lastBuildDate>
+    <atom:link href="http://key-amb.github.io/bootie-docs-demo/categories/usage/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Usage</title>
+      <link>http://key-amb.github.io/bootie-docs-demo/usage/</link>
+      <pubDate>Tue, 28 Apr 2015 15:58:07 +0900</pubDate>
+      
+      <guid>http://key-amb.github.io/bootie-docs-demo/usage/</guid>
+      <description>
+
+&lt;h2 id=&#34;add-more-document-pages:dc32fe45042973266ca60588597e0b66&#34;&gt;Add more document pages&lt;/h2&gt;
+
+&lt;p&gt;You can create more pages by &lt;code&gt;hugo new&lt;/code&gt; command.&lt;/p&gt;
+
+&lt;p&gt;If you want to quick access for the page, you can include it in &amp;ldquo;main menu&amp;rdquo; of your site
+by configuring it as &lt;code&gt;params.mainMenu&lt;/code&gt; in your &lt;code&gt;config.toml&lt;/code&gt; (or &lt;em&gt;config.yaml&lt;/em&gt;):&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;# config.toml
+[params]
+  mainMenu = [&amp;quot;&amp;lt;your-page-name&amp;gt;&amp;quot;, ...]
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Then you can access the page by link in navigation bar on top of the site.&lt;/p&gt;
+
+&lt;p&gt;It is recommended to create the page on top of your &lt;code&gt;content/&lt;/code&gt; directory if you
+want to access it by navigation bar.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

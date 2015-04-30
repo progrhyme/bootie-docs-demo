@@ -17,28 +17,72 @@
       <guid>http://key-amb.github.io/bootie-docs-demo/_index/</guid>
       <description>
 
-&lt;h2 id=&#34;overview:3976528693a0108357f4928017600865&#34;&gt;Overview&lt;/h2&gt;
+&lt;h2 id=&#34;introduction:3976528693a0108357f4928017600865&#34;&gt;Introduction&lt;/h2&gt;
 
-&lt;p&gt;&lt;strong&gt;Bootie Docs&lt;/strong&gt; is a theme for &lt;a href=&#34;http://gohugo.io&#34;&gt;Hugo&lt;/a&gt;.
+&lt;p&gt;&lt;a href=&#34;https://github.com/key-amb/hugo-theme-bootie-docs&#34;&gt;Bootie Docs&lt;/a&gt; is a theme for &lt;a href=&#34;http://gohugo.io&#34;&gt;Hugo&lt;/a&gt;.
 Follow the instructions on Hugo site to install &lt;em&gt;Hugo&lt;/em&gt; and &lt;em&gt;Hugo Themes&lt;/em&gt;.&lt;/p&gt;
 
 &lt;p&gt;This theme is developed to be a suitable one for documentation, especially for software documentation.&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;Bootie Docs&lt;/strong&gt; shold be simple enough to start with, and powerfull enough to organize multiple document pages.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Bootie Docs&lt;/em&gt; shold be simple enough to start with, and powerfull enough to organize multiple document pages.&lt;/p&gt;
+
+&lt;h2 id=&#34;quickstart:3976528693a0108357f4928017600865&#34;&gt;Quickstart&lt;/h2&gt;
+
+&lt;p&gt;Suppose you already installed &lt;strong&gt;Hugo&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;hugo new site /path/to/site
+cd /path/to/site
+mkdir themes
+git clone https://github.com/key-amb/hugo-theme-bootie-docs.git themes/bootie-docs
+# add some contents to your site
+hugo server -t bootie-docs
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;convert-your-readme-md-to-bootie-docs:3976528693a0108357f4928017600865&#34;&gt;Convert your &lt;em&gt;README.md&lt;/em&gt; to &lt;em&gt;Bootie Docs&lt;/em&gt;&lt;/h3&gt;
+
+&lt;p&gt;First, create &lt;code&gt;_index.md&lt;/code&gt; by &lt;code&gt;hugo new&lt;/code&gt; command.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;hugo new _index.md
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Next, copy the content of your &lt;em&gt;README.md&lt;/em&gt; to _&lt;em&gt;index.md&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;Then you will see the content at the top page in your site.&lt;/p&gt;
+
+&lt;h2 id=&#34;learn-more:3976528693a0108357f4928017600865&#34;&gt;Learn More&lt;/h2&gt;
+
+&lt;p&gt;You can see more detailed usage of this theme and complete configuration on
+&lt;a href=&#34;usage&#34;&gt;Usage&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;about&#34;&gt;About&lt;/a&gt; page shows you overview of features and dependencies which
+&lt;em&gt;Bootie Docs&lt;/em&gt; has.&lt;/p&gt;
 </description>
     </item>
     
     <item>
-      <title>Getting Started</title>
-      <link>http://key-amb.github.io/bootie-docs-demo/quickstart/</link>
+      <title>Usage</title>
+      <link>http://key-amb.github.io/bootie-docs-demo/usage/</link>
       <pubDate>Tue, 28 Apr 2015 15:58:07 +0900</pubDate>
       
-      <guid>http://key-amb.github.io/bootie-docs-demo/quickstart/</guid>
+      <guid>http://key-amb.github.io/bootie-docs-demo/usage/</guid>
       <description>
 
-&lt;h2 id=&#34;configure:09c84f91027bd18b03251c05a0da4abb&#34;&gt;Configure&lt;/h2&gt;
+&lt;h2 id=&#34;add-more-document-pages:dc32fe45042973266ca60588597e0b66&#34;&gt;Add more document pages&lt;/h2&gt;
 
-&lt;p&gt;blah blah blah.&lt;/p&gt;
+&lt;p&gt;You can create more pages by &lt;code&gt;hugo new&lt;/code&gt; command.&lt;/p&gt;
+
+&lt;p&gt;If you want to quick access for the page, you can include it in &amp;ldquo;main menu&amp;rdquo; of your site
+by configuring it as &lt;code&gt;params.mainMenu&lt;/code&gt; in your &lt;code&gt;config.toml&lt;/code&gt; (or &lt;em&gt;config.yaml&lt;/em&gt;):&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;# config.toml
+[params]
+  mainMenu = [&amp;quot;&amp;lt;your-page-name&amp;gt;&amp;quot;, ...]
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Then you can access the page by link in navigation bar on top of the site.&lt;/p&gt;
+
+&lt;p&gt;It is recommended to create the page on top of your &lt;code&gt;content/&lt;/code&gt; directory if you
+want to access it by navigation bar.&lt;/p&gt;
 </description>
     </item>
     
@@ -52,7 +96,7 @@ Follow the instructions on Hugo site to install &lt;em&gt;Hugo&lt;/em&gt; and &l
     </item>
     
     <item>
-      <title>about</title>
+      <title>About</title>
       <link>http://key-amb.github.io/bootie-docs-demo/about/</link>
       <pubDate>Sun, 19 Apr 2015 19:17:21 +0900</pubDate>
       

@@ -10,6 +10,7 @@
 		<link rel="icon" href="http://key-amb.github.io/bootie-docs-demo/favicon.ico">
 		<title>Bootie Docs</title>
 		
+		<link rel="stylesheet" href="http://key-amb.github.io/bootie-docs-demo/css/highlight.js.min.css">
 		<link rel="stylesheet" href="http://key-amb.github.io/bootie-docs-demo/css/bootstrap.min.css">
 		<link rel="stylesheet" href="http://key-amb.github.io/bootie-docs-demo/css/bootstrap-theme.css">
 		<link rel="stylesheet" href="http://key-amb.github.io/bootie-docs-demo/css/theme.css">
@@ -35,17 +36,24 @@
 					<li class="active"><a href="http://key-amb.github.io/bootie-docs-demo/">Home</a></li>
 			
 				
-					<li><a href="http://key-amb.github.io/bootie-docs-demo/quickstart">Quickstart</a></li>
+					<li><a href="http://key-amb.github.io/bootie-docs-demo/about">About</a></li>
+				
+					<li><a href="http://key-amb.github.io/bootie-docs-demo/usage">Usage</a></li>
 				
 			
-				<li class="dropdown">
+				
+					<li class="dropdown">
 						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Categories<span class="caret"></span></a>
 						<ul class="dropdown-menu" role="menu">
 						
-							<li><a href="http://key-amb.github.io/bootie-docs-demo/categories/development">Development</a></li>
+							<li><a href="http://key-amb.github.io/bootie-docs-demo/categories/info">Info</a></li>
+						
+							<li><a href="http://key-amb.github.io/bootie-docs-demo/categories/usage">Usage</a></li>
 						
 						</ul>
-					</li>				</ul>
+					</li>
+				
+				</ul>
 			</div>
 		</div>
 	</nav>
@@ -66,14 +74,45 @@
 	<div class="row doc-main">
 		
 
-<h2 id="overview:3976528693a0108357f4928017600865">Overview</h2>
+<h2 id="introduction:3976528693a0108357f4928017600865">Introduction</h2>
 
-<p><strong>Bootie Docs</strong> is a theme for <a href="http://gohugo.io">Hugo</a>.
+<p><a href="https://github.com/key-amb/hugo-theme-bootie-docs">Bootie Docs</a> is a theme for <a href="http://gohugo.io">Hugo</a>.
 Follow the instructions on Hugo site to install <em>Hugo</em> and <em>Hugo Themes</em>.</p>
 
 <p>This theme is developed to be a suitable one for documentation, especially for software documentation.</p>
 
-<p><strong>Bootie Docs</strong> shold be simple enough to start with, and powerfull enough to organize multiple document pages.</p>
+<p><em>Bootie Docs</em> shold be simple enough to start with, and powerfull enough to organize multiple document pages.</p>
+
+<h2 id="quickstart:3976528693a0108357f4928017600865">Quickstart</h2>
+
+<p>Suppose you already installed <strong>Hugo</strong>.</p>
+
+<pre><code>hugo new site /path/to/site
+cd /path/to/site
+mkdir themes
+git clone https://github.com/key-amb/hugo-theme-bootie-docs.git themes/bootie-docs
+# add some contents to your site
+hugo server -t bootie-docs
+</code></pre>
+
+<h3 id="convert-your-readme-md-to-bootie-docs:3976528693a0108357f4928017600865">Convert your <em>README.md</em> to <em>Bootie Docs</em></h3>
+
+<p>First, create <code>_index.md</code> by <code>hugo new</code> command.</p>
+
+<pre><code>hugo new _index.md
+</code></pre>
+
+<p>Next, copy the content of your <em>README.md</em> to _<em>index.md</em>.</p>
+
+<p>Then you will see the content at the top page in your site.</p>
+
+<h2 id="learn-more:3976528693a0108357f4928017600865">Learn More</h2>
+
+<p>You can see more detailed usage of this theme and complete configuration on
+<a href="usage">Usage</a>.</p>
+
+<p><a href="about">About</a> page shows you overview of features and dependencies which
+<em>Bootie Docs</em> has.</p>
 
 	</div>
 
@@ -110,6 +149,8 @@ Follow the instructions on Hugo site to install <em>Hugo</em> and <em>Hugo Theme
 <script src="http://key-amb.github.io/bootie-docs-demo/js/jquery-1.11.2.min.js"></script>
 <script src="http://key-amb.github.io/bootie-docs-demo/js/bootstrap.min.js"></script>
 
+<script src="http://key-amb.github.io/bootie-docs-demo/js/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
 <script src="http://key-amb.github.io/bootie-docs-demo/js/ie10-viewport-bug-workaround.js"></script>
 
 </body>
