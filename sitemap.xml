@@ -3,13 +3,18 @@
   
   <url>
     <loc>http://key-amb.github.io/bootie-docs-demo/</loc>
-    <lastmod>2015-04-30T17:11:21+09:00</lastmod>
+    <lastmod>2016-05-04T17:39:21+09:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://key-amb.github.io/bootie-docs-demo/about/</loc>
-    <lastmod>2015-04-30T17:11:21+09:00</lastmod>
+    <lastmod>2016-05-04T17:39:21+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://key-amb.github.io/bootie-docs-demo/usage/</loc>
+    <lastmod>2016-05-04T17:39:07+09:00</lastmod>
   </url>
   
   <url>
@@ -20,11 +25,6 @@
   <url>
     <loc>http://key-amb.github.io/bootie-docs-demo/_index/</loc>
     <lastmod>2015-04-30T14:16:05+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://key-amb.github.io/bootie-docs-demo/usage/</loc>
-    <lastmod>2015-04-28T15:58:07+09:00</lastmod>
   </url>
   
 </urlset>

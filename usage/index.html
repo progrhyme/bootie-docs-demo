@@ -9,7 +9,7 @@
 		<link rel="icon" href="http://key-amb.github.io/bootie-docs-demo/favicon.ico">
 		<title>Usage - Bootie Docs</title>
 		
-		<link rel="stylesheet" href="http://key-amb.github.io/bootie-docs-demo/css/highlight.js.min.css">
+		<link rel="stylesheet" href="http://key-amb.github.io/bootie-docs-demo/css/highlight/magula.css">
 		<link rel="stylesheet" href="http://key-amb.github.io/bootie-docs-demo/css/bootstrap.min.css">
 		<link rel="stylesheet" href="http://key-amb.github.io/bootie-docs-demo/css/bootstrap-theme.min.css">
 		<link rel="stylesheet" href="http://key-amb.github.io/bootie-docs-demo/css/theme.css">
@@ -70,7 +70,7 @@
 				<a id="title"></a>
 				<h1 class="doc-entry-title">Usage</h1>
 				<div class="doc-entry-meta">
-					<span><time datetime="2015-04-28">April 28, 2015</time></span>
+					<span><time datetime="2016-05-04">May 04, 2016</time></span>
 				</div>
 				<section>
 					
@@ -119,18 +119,21 @@ copyright = &quot;Copyright (c) 2015, Your Name; All rights reserved.&quot;
   mainMenu = [&quot;about&quot;, &quot;usage&quot;]
   #noCategoryLink = true
   repositoryUrl = &quot;http://your-repository-url&quot;
+  highlightStyle = &quot;github&quot;
 </code></pre>
 
-<p><strong>Title</strong> is shown in header navigation bar and on top page.</p>
-
-<p><strong>Copyright</strong> is shown in footer (optional).</p>
-
-<p><strong>Params.description</strong> is shown on top page.</p>
-
-<p>When <strong>params.withSitePosts</strong> is set true, a link appears on top page which leads
-you to the listing page of the posts in your site under the <code>post/</code> directory.</p>
-
-<p><strong>Params.repositoryUrl</strong> is shown in footer (optional).</p>
+<ul>
+<li><strong>Title</strong> is shown in header navigation bar and on top page.</li>
+<li><strong>Copyright</strong> is shown in footer (optional).</li>
+<li><strong>Params.description</strong> is shown on top page.</li>
+<li>When <strong>params.withSitePosts</strong> is set true, a link appears on top page which leads
+you to the listing page of the posts in your site under the <code>post/</code> directory.</li>
+<li><strong>Params.repositoryUrl</strong> is shown in footer (optional).</li>
+<li><strong>Params.highlightStyle</strong> is used to change the style of <code>highlight.js</code>.<br />
+You can find available styles in
+<a href="https://github.com/key-amb/hugo-theme-bootie-docs/tree/master/static/css/highlight">static/css/highlight</a>
+directory.</li>
+</ul>
 
 				</section>
 			</article>
@@ -193,7 +196,7 @@ you to the listing page of the posts in your site under the <code>post/</code> d
 <script src="http://key-amb.github.io/bootie-docs-demo/js/jquery.min.js"></script>
 <script src="http://key-amb.github.io/bootie-docs-demo/js/bootstrap.min.js"></script>
 
-<script src="http://key-amb.github.io/bootie-docs-demo/js/highlight.min.js"></script>
+<script src="http://key-amb.github.io/bootie-docs-demo/js/highlight.pack.js"></script>
 <script>hljs.initHighlightingOnLoad();</script>
 <script src="http://key-amb.github.io/bootie-docs-demo/js/ie10-viewport-bug-workaround.js"></script>
 
