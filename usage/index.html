@@ -42,6 +42,9 @@
 					
 					<li class="active"><a href="http://key-amb.github.io/bootie-docs-demo/usage">Usage</a></li>
 				
+					
+					<li ><a href="http://key-amb.github.io/bootie-docs-demo/index">Index</a></li>
+				
 			
 				
 					<li class="dropdown">
@@ -79,6 +82,9 @@
 
 <p>You can create more pages by <code>hugo new</code> command.</p>
 
+<pre><code>$ hugo new page-name.md
+</code></pre>
+
 <p>If you want to quick access for the page, you can include it in &ldquo;main menu&rdquo; of your site
 by configuring it as <code>params.mainMenu</code> in your <code>config.toml</code> (or <em>config.yaml</em>):</p>
 
@@ -91,6 +97,24 @@ by configuring it as <code>params.mainMenu</code> in your <code>config.toml</cod
 
 <p>It is recommended to create the page on top of your <code>content/</code> directory if you
 want to access it by navigation bar.</p>
+
+<h2 id="add-index-page:dc32fe45042973266ca60588597e0b66">Add Index Page</h2>
+
+<p><code>Index</code> page shows all your page list in section hierarchy.</p>
+
+<p>To add <code>index</code> page to your site, follow these steps:</p>
+
+<p>1) Create <code>index/_dummy</code> page by <code>hugo new</code> command:</p>
+
+<pre><code>$ hugo new index/_dummy.md
+</code></pre>
+
+<p>2) Add <code>index</code> to <code>Params.mainMenu</code> in config file:</p>
+
+<pre><code># config.toml
+[params]
+  mainMenu = [..., &quot;index&quot;]
+</code></pre>
 
 <h2 id="categorize-and-tagging-pages:dc32fe45042973266ca60588597e0b66">Categorize and Tagging pages</h2>
 
@@ -116,7 +140,7 @@ copyright = &quot;Copyright (c) 2015, Your Name; All rights reserved.&quot;
 [params]
   description = &quot;Brief description for your site.&quot;
   withSitePosts = true
-  mainMenu = [&quot;about&quot;, &quot;usage&quot;]
+  mainMenu = [&quot;about&quot;, &quot;usage&quot;, &quot;index&quot;]
   #noCategoryLink = true
   repositoryUrl = &quot;http://your-repository-url&quot;
   highlightStyle = &quot;github&quot;
@@ -153,6 +177,7 @@ directory.</li>
 <li>
 <ul>
 <li><a href="#add-more-document-pages:dc32fe45042973266ca60588597e0b66">Add more document pages</a></li>
+<li><a href="#add-index-page:dc32fe45042973266ca60588597e0b66">Add Index Page</a></li>
 <li><a href="#categorize-and-tagging-pages:dc32fe45042973266ca60588597e0b66">Categorize and Tagging pages</a></li>
 <li><a href="#other-configurations:dc32fe45042973266ca60588597e0b66">Other Configurations</a></li>
 </ul></li>

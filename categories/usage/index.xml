@@ -22,6 +22,9 @@
 
 &lt;p&gt;You can create more pages by &lt;code&gt;hugo new&lt;/code&gt; command.&lt;/p&gt;
 
+&lt;pre&gt;&lt;code&gt;$ hugo new page-name.md
+&lt;/code&gt;&lt;/pre&gt;
+
 &lt;p&gt;If you want to quick access for the page, you can include it in &amp;ldquo;main menu&amp;rdquo; of your site
 by configuring it as &lt;code&gt;params.mainMenu&lt;/code&gt; in your &lt;code&gt;config.toml&lt;/code&gt; (or &lt;em&gt;config.yaml&lt;/em&gt;):&lt;/p&gt;
 
@@ -34,6 +37,24 @@ by configuring it as &lt;code&gt;params.mainMenu&lt;/code&gt; in your &lt;code&g
 
 &lt;p&gt;It is recommended to create the page on top of your &lt;code&gt;content/&lt;/code&gt; directory if you
 want to access it by navigation bar.&lt;/p&gt;
+
+&lt;h2 id=&#34;add-index-page:dc32fe45042973266ca60588597e0b66&#34;&gt;Add Index Page&lt;/h2&gt;
+
+&lt;p&gt;&lt;code&gt;Index&lt;/code&gt; page shows all your page list in section hierarchy.&lt;/p&gt;
+
+&lt;p&gt;To add &lt;code&gt;index&lt;/code&gt; page to your site, follow these steps:&lt;/p&gt;
+
+&lt;p&gt;1) Create &lt;code&gt;index/_dummy&lt;/code&gt; page by &lt;code&gt;hugo new&lt;/code&gt; command:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ hugo new index/_dummy.md
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;2) Add &lt;code&gt;index&lt;/code&gt; to &lt;code&gt;Params.mainMenu&lt;/code&gt; in config file:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;# config.toml
+[params]
+  mainMenu = [..., &amp;quot;index&amp;quot;]
+&lt;/code&gt;&lt;/pre&gt;
 
 &lt;h2 id=&#34;categorize-and-tagging-pages:dc32fe45042973266ca60588597e0b66&#34;&gt;Categorize and Tagging pages&lt;/h2&gt;
 
@@ -59,7 +80,7 @@ copyright = &amp;quot;Copyright (c) 2015, Your Name; All rights reserved.&amp;qu
 [params]
   description = &amp;quot;Brief description for your site.&amp;quot;
   withSitePosts = true
-  mainMenu = [&amp;quot;about&amp;quot;, &amp;quot;usage&amp;quot;]
+  mainMenu = [&amp;quot;about&amp;quot;, &amp;quot;usage&amp;quot;, &amp;quot;index&amp;quot;]
   #noCategoryLink = true
   repositoryUrl = &amp;quot;http://your-repository-url&amp;quot;
   highlightStyle = &amp;quot;github&amp;quot;
