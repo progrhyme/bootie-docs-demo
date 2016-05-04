@@ -10,3 +10,4 @@ copyright = "Copyright (c) 2015, YASUTAKE Kiyoshi; All rights reserved."
   mainMenu = ["about", "usage"]
   #noCategoryLink = true
   repositoryUrl = "https://github.com/key-amb/bootie-docs-demo/"
+  highlightStyle = "magula"

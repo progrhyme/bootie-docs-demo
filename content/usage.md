@@ -1,5 +1,5 @@
 +++
-date = "2015-04-28T15:58:07+09:00"
+date = "2016-05-04T17:39:07+09:00"
 title = "Usage"
 categories = ["usage"]
 tags = ["config", "document"]
@@ -52,15 +52,16 @@ copyright = "Copyright (c) 2015, Your Name; All rights reserved."
   mainMenu = ["about", "usage"]
   #noCategoryLink = true
   repositoryUrl = "http://your-repository-url"
+  highlightStyle = "github"
 ```
 
-**Title** is shown in header navigation bar and on top page.
-
-**Copyright** is shown in footer (optional).
-
-**Params.description** is shown on top page.
-
-When **params.withSitePosts** is set true, a link appears on top page which leads
+* **Title** is shown in header navigation bar and on top page.
+* **Copyright** is shown in footer (optional).
+* **Params.description** is shown on top page.
+* When **params.withSitePosts** is set true, a link appears on top page which leads
 you to the listing page of the posts in your site under the `post/` directory.
-
-**Params.repositoryUrl** is shown in footer (optional).
+* **Params.repositoryUrl** is shown in footer (optional).
+* **Params.highlightStyle** is used to change the style of `highlight.js`.  
+You can find available styles in
+[static/css/highlight](https://github.com/key-amb/hugo-theme-bootie-docs/tree/master/static/css/highlight)
+directory.
