@@ -7,7 +7,7 @@ tags = ["document"]
 
 ## Version
 
-0.9.2
+1.0.0
 
 ## Dependencies
 
