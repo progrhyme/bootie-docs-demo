@@ -6,7 +6,7 @@
     <description>Recent content on Bootie Docs</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>Copyright (c) 2015, YASUTAKE Kiyoshi; All rights reserved.</copyright>
+    <copyright>Copyright (c) 2015-2016, YASUTAKE Kiyoshi; All rights reserved.</copyright>
     <lastBuildDate>Wed, 04 May 2016 23:20:07 +0900</lastBuildDate>
     <atom:link href="http://key-amb.github.io/bootie-docs-demo/index.xml" rel="self" type="application/rss+xml" />
     
@@ -29,7 +29,7 @@
 
 &lt;h2 id=&#34;version:6083a88ee3411b0d17ce02d738f69d47&#34;&gt;Version&lt;/h2&gt;
 
-&lt;p&gt;1.0.0&lt;/p&gt;
+&lt;p&gt;1.0.1&lt;/p&gt;
 
 &lt;h2 id=&#34;dependencies:6083a88ee3411b0d17ce02d738f69d47&#34;&gt;Dependencies&lt;/h2&gt;
 
