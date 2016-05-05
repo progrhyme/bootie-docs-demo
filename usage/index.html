@@ -138,12 +138,23 @@ If you set <code>params.noCategoryLink</code> true in your <code>config.toml</co
   noCategoryLink = true
 </code></pre>
 
+<h2 id="add-search-form-by-google:dc32fe45042973266ca60588597e0b66">Add Search Form by Google</h2>
+
+<p>You can add <strong>search form</strong> on navbar by adding configuration param <code>params.searchDomain</code>:</p>
+
+<pre><code># config.toml
+[params]
+  searchDomain = &quot;your-domain.org&quot;
+</code></pre>
+
+<p>This adds search form using Google site search.</p>
+
 <h2 id="other-configurations:dc32fe45042973266ca60588597e0b66">Other Configurations</h2>
 
 <p>Here is an example of <code>config.toml</code> including all customizable parameters for this
 theme:</p>
 
-<pre><code>baseurl = &quot;http://your-site&quot;
+<pre><code>baseurl = &quot;http://your-domain.org&quot;
 title = &quot;Your Site&quot;
 theme = &quot;bootie-docs&quot;
 copyright = &quot;Copyright (c) 2015, Your Name; All rights reserved.&quot;
@@ -152,6 +163,7 @@ copyright = &quot;Copyright (c) 2015, Your Name; All rights reserved.&quot;
   description = &quot;Brief description for your site.&quot;
   withSitePosts = true
   mainMenu = [&quot;about&quot;, &quot;usage&quot;, &quot;index&quot;]
+  searchDomain = &quot;your-domain.org&quot;
   #noCategoryLink = true
   repositoryUrl = &quot;http://your-repository-url&quot;
   highlightStyle = &quot;github&quot;
@@ -191,6 +203,7 @@ directory.</li>
 <li><a href="#add-more-document-pages:dc32fe45042973266ca60588597e0b66">Add more document pages</a></li>
 <li><a href="#add-index-page:dc32fe45042973266ca60588597e0b66">Add Index Page</a></li>
 <li><a href="#categorize-and-tagging-pages:dc32fe45042973266ca60588597e0b66">Categorize and Tagging pages</a></li>
+<li><a href="#add-search-form-by-google:dc32fe45042973266ca60588597e0b66">Add Search Form by Google</a></li>
 <li><a href="#other-configurations:dc32fe45042973266ca60588597e0b66">Other Configurations</a></li>
 </ul></li>
 </ul>

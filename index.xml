@@ -100,12 +100,23 @@ If you set &lt;code&gt;params.noCategoryLink&lt;/code&gt; true in your &lt;code&
   noCategoryLink = true
 &lt;/code&gt;&lt;/pre&gt;
 
+&lt;h2 id=&#34;add-search-form-by-google:dc32fe45042973266ca60588597e0b66&#34;&gt;Add Search Form by Google&lt;/h2&gt;
+
+&lt;p&gt;You can add &lt;strong&gt;search form&lt;/strong&gt; on navbar by adding configuration param &lt;code&gt;params.searchDomain&lt;/code&gt;:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;# config.toml
+[params]
+  searchDomain = &amp;quot;your-domain.org&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;This adds search form using Google site search.&lt;/p&gt;
+
 &lt;h2 id=&#34;other-configurations:dc32fe45042973266ca60588597e0b66&#34;&gt;Other Configurations&lt;/h2&gt;
 
 &lt;p&gt;Here is an example of &lt;code&gt;config.toml&lt;/code&gt; including all customizable parameters for this
 theme:&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;baseurl = &amp;quot;http://your-site&amp;quot;
+&lt;pre&gt;&lt;code&gt;baseurl = &amp;quot;http://your-domain.org&amp;quot;
 title = &amp;quot;Your Site&amp;quot;
 theme = &amp;quot;bootie-docs&amp;quot;
 copyright = &amp;quot;Copyright (c) 2015, Your Name; All rights reserved.&amp;quot;
@@ -114,6 +125,7 @@ copyright = &amp;quot;Copyright (c) 2015, Your Name; All rights reserved.&amp;qu
   description = &amp;quot;Brief description for your site.&amp;quot;
   withSitePosts = true
   mainMenu = [&amp;quot;about&amp;quot;, &amp;quot;usage&amp;quot;, &amp;quot;index&amp;quot;]
+  searchDomain = &amp;quot;your-domain.org&amp;quot;
   #noCategoryLink = true
   repositoryUrl = &amp;quot;http://your-repository-url&amp;quot;
   highlightStyle = &amp;quot;github&amp;quot;
