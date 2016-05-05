@@ -59,13 +59,25 @@ If you set `params.noCategoryLink` true in your `config.toml`, the drop-down men
   noCategoryLink = true
 ```
 
+## Add Search Form by Google
+
+You can add **search form** on navbar by adding configuration param `params.searchDomain`:
+
+```
+# config.toml
+[params]
+  searchDomain = "your-domain.org"
+```
+
+This adds search form using Google site search.
+
 ## Other Configurations
 
 Here is an example of `config.toml` including all customizable parameters for this
 theme:
 
 ```
-baseurl = "http://your-site"
+baseurl = "http://your-domain.org"
 title = "Your Site"
 theme = "bootie-docs"
 copyright = "Copyright (c) 2015, Your Name; All rights reserved."
@@ -74,6 +86,7 @@ copyright = "Copyright (c) 2015, Your Name; All rights reserved."
   description = "Brief description for your site."
   withSitePosts = true
   mainMenu = ["about", "usage", "index"]
+  searchDomain = "your-domain.org"
   #noCategoryLink = true
   repositoryUrl = "http://your-repository-url"
   highlightStyle = "github"
