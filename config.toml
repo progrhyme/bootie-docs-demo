@@ -7,8 +7,19 @@ copyright = "Copyright (c) 2015-2016, YASUTAKE Kiyoshi; All rights reserved."
 [params]
   description = "A simple Hugo theme for documentation."
   withSitePosts = true
-  mainMenu = ["about", "usage", "index"]
   searchDomain = "key-amb.github.io/bootie-docs-demo"
   #noCategoryLink = true
   repositoryUrl = "https://github.com/key-amb/bootie-docs-demo/"
   highlightStyle = "magula"
+
+[[params.mainMenu]]
+  name = "About"
+  link = "about"
+
+[[params.mainMenu]]
+  name = "Usage"
+  link = "usage"
+
+[[params.mainMenu]]
+  name = "Index"
+  link = "index"

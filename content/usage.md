@@ -1,5 +1,5 @@
 +++
-date = "2016-05-04T17:39:07+09:00"
+date = "2016-05-07T07:17:07+09:00"
 title = "Usage"
 categories = ["usage"]
 tags = ["config", "document"]
@@ -13,19 +13,22 @@ You can create more pages by `hugo new` command.
 $ hugo new page-name.md
 ```
 
-If you want to quick access for the page, you can include it in "main menu" of your site
-by configuring it as `params.mainMenu` in your `config.toml` (or _config.yaml_):
+If you want to quick access for the page, you can include it in _navigation bar_
+in header by adding an entry of `[[params.mainMenu]]` in your `config.toml` (or
+_config.yaml_):
 
 ```
 # config.toml
-[params]
-  mainMenu = ["<your-page-name>", ...]
+[[params.mainMenu]]
+  name = "<Text to show>"
+  link = "<relative-path-to-page>"
 ```
 
 Then you can access the page by link in navigation bar at header of the site.
 
-It is recommended to create the page on top of your `content/` directory if you
-want to access it by navigation bar.
+Before **v1.0.3**, the link name must be same to page name just under `content/`
+directory.  
+After **v1.1.0**, you can add menu to any page in the site by the format above.
 
 ## Add Index Page
 
@@ -39,12 +42,13 @@ To add `index` page to your site, follow these steps:
 $ hugo new index/_dummy.md
 ```
 
-2) Add `index` to `Params.mainMenu` in config file:
+2) Add an entry of `[[params.mainMenu]]` in config file which links to `index`:
 
 ```
 # config.toml
-[params]
-  mainMenu = [..., "index"]
+[[params.mainMenu]
+  name = "Index"
+  link = "index"
 ```
 
 ## Categorize and Tagging pages
@@ -85,11 +89,22 @@ copyright = "Copyright (c) 2015, Your Name; All rights reserved."
 [params]
   description = "Brief description for your site."
   withSitePosts = true
-  mainMenu = ["about", "usage", "index"]
   searchDomain = "your-domain.org"
   #noCategoryLink = true
   repositoryUrl = "http://your-repository-url"
   highlightStyle = "github"
+
+[[params.mainMenu]]
+  name = "About"
+  link = "about"
+
+[[params.mainMenu]]
+  name = "Usage"
+  link = "usage"
+
+[[params.mainMenu]]
+  name = "Index"
+  link = "index"
 ```
 
 * **Title** is shown in header navigation bar and on top page.
