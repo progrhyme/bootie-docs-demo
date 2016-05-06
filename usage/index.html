@@ -84,7 +84,7 @@
 				<a id="title"></a>
 				<h1 class="doc-entry-title">Usage</h1>
 				<div class="doc-entry-meta">
-					<span><time datetime="2016-05-04">May 04, 2016</time></span>
+					<span><time datetime="2016-05-07">May 07, 2016</time></span>
 				</div>
 				<section>
 					
@@ -96,18 +96,21 @@
 <pre><code>$ hugo new page-name.md
 </code></pre>
 
-<p>If you want to quick access for the page, you can include it in &ldquo;main menu&rdquo; of your site
-by configuring it as <code>params.mainMenu</code> in your <code>config.toml</code> (or <em>config.yaml</em>):</p>
+<p>If you want to quick access for the page, you can include it in <em>navigation bar</em>
+in header by adding an entry of <code>[[params.mainMenu]]</code> in your <code>config.toml</code> (or
+<em>config.yaml</em>):</p>
 
 <pre><code># config.toml
-[params]
-  mainMenu = [&quot;&lt;your-page-name&gt;&quot;, ...]
+[[params.mainMenu]]
+  name = &quot;&lt;Text to show&gt;&quot;
+  link = &quot;&lt;relative-path-to-page&gt;&quot;
 </code></pre>
 
 <p>Then you can access the page by link in navigation bar at header of the site.</p>
 
-<p>It is recommended to create the page on top of your <code>content/</code> directory if you
-want to access it by navigation bar.</p>
+<p>Before <strong>v1.0.3</strong>, the link name must be same to page name just under <code>content/</code>
+directory.<br />
+After <strong>v1.1.0</strong>, you can add menu to any page in the site by the format above.</p>
 
 <h2 id="add-index-page:dc32fe45042973266ca60588597e0b66">Add Index Page</h2>
 
@@ -120,11 +123,12 @@ want to access it by navigation bar.</p>
 <pre><code>$ hugo new index/_dummy.md
 </code></pre>
 
-<p>2) Add <code>index</code> to <code>Params.mainMenu</code> in config file:</p>
+<p>2) Add an entry of <code>[[params.mainMenu]]</code> in config file which links to <code>index</code>:</p>
 
 <pre><code># config.toml
-[params]
-  mainMenu = [..., &quot;index&quot;]
+[[params.mainMenu]
+  name = &quot;Index&quot;
+  link = &quot;index&quot;
 </code></pre>
 
 <h2 id="categorize-and-tagging-pages:dc32fe45042973266ca60588597e0b66">Categorize and Tagging pages</h2>
@@ -162,11 +166,22 @@ copyright = &quot;Copyright (c) 2015, Your Name; All rights reserved.&quot;
 [params]
   description = &quot;Brief description for your site.&quot;
   withSitePosts = true
-  mainMenu = [&quot;about&quot;, &quot;usage&quot;, &quot;index&quot;]
   searchDomain = &quot;your-domain.org&quot;
   #noCategoryLink = true
   repositoryUrl = &quot;http://your-repository-url&quot;
   highlightStyle = &quot;github&quot;
+
+[[params.mainMenu]]
+  name = &quot;About&quot;
+  link = &quot;about&quot;
+
+[[params.mainMenu]]
+  name = &quot;Usage&quot;
+  link = &quot;usage&quot;
+
+[[params.mainMenu]]
+  name = &quot;Index&quot;
+  link = &quot;index&quot;
 </code></pre>
 
 <ul>
