@@ -7,8 +7,32 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright (c) 2015-2016, YASUTAKE Kiyoshi; All rights reserved.</copyright>
-    <lastBuildDate>Sat, 07 May 2016 07:17:07 +0900</lastBuildDate>
+    <lastBuildDate>Sat, 07 May 2016 07:39:21 +0900</lastBuildDate>
     <atom:link href="http://key-amb.github.io/bootie-docs-demo/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>About</title>
+      <link>http://key-amb.github.io/bootie-docs-demo/about/</link>
+      <pubDate>Sat, 07 May 2016 07:39:21 +0900</pubDate>
+      
+      <guid>http://key-amb.github.io/bootie-docs-demo/about/</guid>
+      <description>
+
+&lt;h2 id=&#34;version:6083a88ee3411b0d17ce02d738f69d47&#34;&gt;Version&lt;/h2&gt;
+
+&lt;p&gt;1.1.0&lt;/p&gt;
+
+&lt;h2 id=&#34;dependencies:6083a88ee3411b0d17ce02d738f69d47&#34;&gt;Dependencies&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://getbootstrap.com/&#34;&gt;Bootstrap&lt;/a&gt; &amp;hellip; Well-known CSS framework.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://jquery.com/&#34;&gt;jQuery&lt;/a&gt; &amp;hellip; Requried by &lt;em&gt;Bootstrap&lt;/em&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://highlightjs.org/&#34;&gt;highlight.js&lt;/a&gt; &amp;hellip; For syntax highlighting.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;See also README of &lt;a href=&#34;https://github.com/key-amb/hugo-theme-bootie-docs&#34;&gt;Bootie Docs&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Usage</title>
@@ -125,30 +149,6 @@ You can find available styles in
 &lt;a href=&#34;https://github.com/key-amb/hugo-theme-bootie-docs/tree/master/static/css/highlight&#34;&gt;static/css/highlight&lt;/a&gt;
 directory.&lt;/li&gt;
 &lt;/ul&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>About</title>
-      <link>http://key-amb.github.io/bootie-docs-demo/about/</link>
-      <pubDate>Thu, 05 May 2016 13:39:21 +0900</pubDate>
-      
-      <guid>http://key-amb.github.io/bootie-docs-demo/about/</guid>
-      <description>
-
-&lt;h2 id=&#34;version:6083a88ee3411b0d17ce02d738f69d47&#34;&gt;Version&lt;/h2&gt;
-
-&lt;p&gt;1.0.2&lt;/p&gt;
-
-&lt;h2 id=&#34;dependencies:6083a88ee3411b0d17ce02d738f69d47&#34;&gt;Dependencies&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://getbootstrap.com/&#34;&gt;Bootstrap&lt;/a&gt; &amp;hellip; Well-known CSS framework.&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://jquery.com/&#34;&gt;jQuery&lt;/a&gt; &amp;hellip; Requried by &lt;em&gt;Bootstrap&lt;/em&gt;.&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://highlightjs.org/&#34;&gt;highlight.js&lt;/a&gt; &amp;hellip; For syntax highlighting.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;See also README of &lt;a href=&#34;https://github.com/key-amb/hugo-theme-bootie-docs&#34;&gt;Bootie Docs&lt;/a&gt;.&lt;/p&gt;
 </description>
     </item>
     
