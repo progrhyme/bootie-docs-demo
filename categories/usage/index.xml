@@ -2,12 +2,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Usage on Bootie Docs</title>
-    <link>http://key-amb.github.io/bootie-docs-demo/categories/usage/</link>
+    <link>http://key-amb.github.io/bootie-docs-demo/categories/usage/index.xml</link>
     <description>Recent content in Usage on Bootie Docs</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright (c) 2015-2016, YASUTAKE Kiyoshi; All rights reserved.</copyright>
-    <lastBuildDate>Sat, 07 May 2016 07:17:07 +0900</lastBuildDate>
     <atom:link href="http://key-amb.github.io/bootie-docs-demo/categories/usage/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
@@ -18,7 +17,7 @@
       <guid>http://key-amb.github.io/bootie-docs-demo/usage/</guid>
       <description>
 
-&lt;h2 id=&#34;add-more-document-pages:dc32fe45042973266ca60588597e0b66&#34;&gt;Add more document pages&lt;/h2&gt;
+&lt;h2 id=&#34;add-more-document-pages&#34;&gt;Add more document pages&lt;/h2&gt;
 
 &lt;p&gt;You can create more pages by &lt;code&gt;hugo new&lt;/code&gt; command.&lt;/p&gt;
 
@@ -41,7 +40,7 @@ in header by adding an entry of &lt;code&gt;[[params.mainMenu]]&lt;/code&gt; in 
 directory.&lt;br /&gt;
 After &lt;strong&gt;v1.1.0&lt;/strong&gt;, you can add menu to any page in the site by the format above.&lt;/p&gt;
 
-&lt;h2 id=&#34;add-index-page:dc32fe45042973266ca60588597e0b66&#34;&gt;Add Index Page&lt;/h2&gt;
+&lt;h2 id=&#34;add-index-page&#34;&gt;Add Index Page&lt;/h2&gt;
 
 &lt;p&gt;&lt;code&gt;Index&lt;/code&gt; page shows all your page list in section hierarchy.&lt;/p&gt;
 
@@ -60,7 +59,7 @@ After &lt;strong&gt;v1.1.0&lt;/strong&gt;, you can add menu to any page in the s
   link = &amp;quot;index&amp;quot;
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h2 id=&#34;categorize-and-tagging-pages:dc32fe45042973266ca60588597e0b66&#34;&gt;Categorize and Tagging pages&lt;/h2&gt;
+&lt;h2 id=&#34;categorize-and-tagging-pages&#34;&gt;Categorize and Tagging pages&lt;/h2&gt;
 
 &lt;p&gt;You can add one or more &lt;em&gt;categories&lt;/em&gt; and &lt;em&gt;tags&lt;/em&gt; to pages.&lt;/p&gt;
 
@@ -71,7 +70,7 @@ If you set &lt;code&gt;params.noCategoryLink&lt;/code&gt; true in your &lt;code&
   noCategoryLink = true
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h2 id=&#34;add-search-form-by-google:dc32fe45042973266ca60588597e0b66&#34;&gt;Add Search Form by Google&lt;/h2&gt;
+&lt;h2 id=&#34;add-search-form-by-google&#34;&gt;Add Search Form by Google&lt;/h2&gt;
 
 &lt;p&gt;You can add &lt;strong&gt;search form&lt;/strong&gt; on navbar by adding configuration param &lt;code&gt;params.searchDomain&lt;/code&gt;:&lt;/p&gt;
 
@@ -82,7 +81,7 @@ If you set &lt;code&gt;params.noCategoryLink&lt;/code&gt; true in your &lt;code&
 
 &lt;p&gt;This adds search form using Google site search.&lt;/p&gt;
 
-&lt;h2 id=&#34;other-configurations:dc32fe45042973266ca60588597e0b66&#34;&gt;Other Configurations&lt;/h2&gt;
+&lt;h2 id=&#34;other-configurations&#34;&gt;Other Configurations&lt;/h2&gt;
 
 &lt;p&gt;Here is an example of &lt;code&gt;config.toml&lt;/code&gt; including all customizable parameters for this
 theme:&lt;/p&gt;

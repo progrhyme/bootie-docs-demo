@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Bootie Docs</title>
-    <link>http://key-amb.github.io/bootie-docs-demo/post/</link>
+    <link>http://key-amb.github.io/bootie-docs-demo/post/index.xml</link>
     <description>Recent content in Posts on Bootie Docs</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>

@@ -2,27 +2,26 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Info on Bootie Docs</title>
-    <link>http://key-amb.github.io/bootie-docs-demo/categories/info/</link>
+    <link>http://key-amb.github.io/bootie-docs-demo/categories/info/index.xml</link>
     <description>Recent content in Info on Bootie Docs</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright (c) 2015-2016, YASUTAKE Kiyoshi; All rights reserved.</copyright>
-    <lastBuildDate>Sat, 07 May 2016 07:39:21 +0900</lastBuildDate>
     <atom:link href="http://key-amb.github.io/bootie-docs-demo/categories/info/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>About</title>
       <link>http://key-amb.github.io/bootie-docs-demo/about/</link>
-      <pubDate>Sat, 07 May 2016 07:39:21 +0900</pubDate>
+      <pubDate>Wed, 11 Jan 2017 00:45:21 +0900</pubDate>
       
       <guid>http://key-amb.github.io/bootie-docs-demo/about/</guid>
       <description>
 
-&lt;h2 id=&#34;version:6083a88ee3411b0d17ce02d738f69d47&#34;&gt;Version&lt;/h2&gt;
+&lt;h2 id=&#34;version&#34;&gt;Version&lt;/h2&gt;
 
-&lt;p&gt;1.1.1&lt;/p&gt;
+&lt;p&gt;1.1.3&lt;/p&gt;
 
-&lt;h2 id=&#34;dependencies:6083a88ee3411b0d17ce02d738f69d47&#34;&gt;Dependencies&lt;/h2&gt;
+&lt;h2 id=&#34;dependencies&#34;&gt;Dependencies&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;http://getbootstrap.com/&#34;&gt;Bootstrap&lt;/a&gt; &amp;hellip; Well-known CSS framework.&lt;/li&gt;
