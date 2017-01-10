@@ -15,3 +15,10 @@ ln -s /path/to/hugo-theme-bootie-docs themes/bootie-docs
 hugo server [options]
 ```
 
+## Publish Demo Site
+
+```bash
+git clone -b gh-pages git@github.com:key-amb/hugo-theme-bootie-docs.git public
+make publish
+```
+
