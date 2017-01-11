@@ -14,12 +14,12 @@ copyright = "Copyright (c) 2015-2016, YASUTAKE Kiyoshi; All rights reserved."
 
 [[params.mainMenu]]
   name = "About"
-  link = "about"
+  link = "about/"
 
 [[params.mainMenu]]
   name = "Usage"
-  link = "usage"
+  link = "usage/"
 
 [[params.mainMenu]]
   name = "Index"
-  link = "index"
+  link = "index/"
