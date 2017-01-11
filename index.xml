@@ -81,7 +81,7 @@ After &lt;strong&gt;v1.1.0&lt;/strong&gt;, you can add menu to any page in the s
 &lt;pre&gt;&lt;code&gt;# config.toml
 [[params.mainMenu]
   name = &amp;quot;Index&amp;quot;
-  link = &amp;quot;index&amp;quot;
+  link = &amp;quot;index/&amp;quot;
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;h2 id=&#34;categorize-and-tagging-pages&#34;&gt;Categorize and Tagging pages&lt;/h2&gt;
@@ -126,15 +126,15 @@ copyright = &amp;quot;Copyright (c) 2015, Your Name; All rights reserved.&amp;qu
 
 [[params.mainMenu]]
   name = &amp;quot;About&amp;quot;
-  link = &amp;quot;about&amp;quot;
+  link = &amp;quot;about/&amp;quot;
 
 [[params.mainMenu]]
   name = &amp;quot;Usage&amp;quot;
-  link = &amp;quot;usage&amp;quot;
+  link = &amp;quot;usage/&amp;quot;
 
 [[params.mainMenu]]
   name = &amp;quot;Index&amp;quot;
-  link = &amp;quot;index&amp;quot;
+  link = &amp;quot;index/&amp;quot;
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;ul&gt;
