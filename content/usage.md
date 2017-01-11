@@ -48,7 +48,7 @@ $ hugo new index/_dummy.md
 # config.toml
 [[params.mainMenu]
   name = "Index"
-  link = "index"
+  link = "index/"
 ```
 
 ## Categorize and Tagging pages
@@ -96,15 +96,15 @@ copyright = "Copyright (c) 2015, Your Name; All rights reserved."
 
 [[params.mainMenu]]
   name = "About"
-  link = "about"
+  link = "about/"
 
 [[params.mainMenu]]
   name = "Usage"
-  link = "usage"
+  link = "usage/"
 
 [[params.mainMenu]]
   name = "Index"
-  link = "index"
+  link = "index/"
 ```
 
 * **Title** is shown in header navigation bar and on top page.
