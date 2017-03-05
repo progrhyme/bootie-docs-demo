@@ -142,6 +142,11 @@ You can find available styles in
 &lt;a href=&#34;https://github.com/key-amb/hugo-theme-bootie-docs/tree/master/static/css/highlight&#34;&gt;static/css/highlight&lt;/a&gt;
 directory.&lt;/li&gt;
 &lt;/ul&gt;
+
+&lt;h2 id=&#34;add-site-customized-css&#34;&gt;Add site-customized CSS&lt;/h2&gt;
+
+&lt;p&gt;You can add styles to customize site&amp;rsquo;s UI into file: &lt;code&gt;static/css/site.css&lt;/code&gt;.&lt;br /&gt;
+The CSS is loaded by &lt;em&gt;Bootie Docs&lt;/em&gt;.&lt;/p&gt;
 </description>
     </item>
     
