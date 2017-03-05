@@ -6,8 +6,144 @@
     <description>Recent content in Document on Bootie Docs</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>Copyright (c) 2015-2016, YASUTAKE Kiyoshi; All rights reserved.</copyright>
+    <copyright>Copyright (c) 2015-2017, IKEDA Kiyoshi; All rights reserved.</copyright>
     <atom:link href="http://key-amb.github.io/bootie-docs-demo/tags/document/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Usage</title>
+      <link>http://key-amb.github.io/bootie-docs-demo/usage/</link>
+      <pubDate>Sun, 05 Mar 2017 10:25:07 +0900</pubDate>
+      
+      <guid>http://key-amb.github.io/bootie-docs-demo/usage/</guid>
+      <description>
+
+&lt;h2 id=&#34;getting-started&#34;&gt;Getting Started&lt;/h2&gt;
+
+&lt;p&gt;See the &lt;a href=&#34;../#quickstart&#34;&gt;Quickstart guide at Home&lt;/a&gt; before reading the following contents.&lt;/p&gt;
+
+&lt;h2 id=&#34;add-more-document-pages&#34;&gt;Add more document pages&lt;/h2&gt;
+
+&lt;p&gt;You can create more pages by &lt;code&gt;hugo new&lt;/code&gt; command.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ hugo new page-name.md
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;If you want to quick access for the page, you can utilize Hugo&amp;rsquo;s built-in
+&lt;a href=&#34;https://gohugo.io/extras/menus/&#34;&gt;Menu System&lt;/a&gt; to customize &lt;em&gt;navigation bar&lt;/em&gt; in
+header.&lt;/p&gt;
+
+&lt;p&gt;For this purpose, add an entry of &lt;code&gt;[[menu.main]]&lt;/code&gt; in your &lt;code&gt;config.toml&lt;/code&gt; (or
+&lt;em&gt;config.yaml&lt;/em&gt;):&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-toml&#34;&gt;# config.toml
+[[menu.main]]
+  name = &amp;quot;&amp;lt;Text to show&amp;gt;&amp;quot;
+  url  = &amp;quot;&amp;lt;relative-path-to-page&amp;gt;&amp;quot;
+  weight = &amp;lt;integer value&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Then you can access the page by link in navigation bar at header of the site.&lt;/p&gt;
+
+&lt;p&gt;See Hugo&amp;rsquo;s documentation for more options of &lt;em&gt;Menu System&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;NOTE:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Before &lt;strong&gt;v1.3.0&lt;/strong&gt;, &lt;code&gt;[[menu.main]]&lt;/code&gt; is not supported. Instead,
+&lt;code&gt;[[params.mainMenu]]&lt;/code&gt; is used for navigation menu.&lt;/li&gt;
+&lt;li&gt;Nested menus are not supported.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;add-index-page&#34;&gt;Add Index Page&lt;/h2&gt;
+
+&lt;p&gt;&lt;code&gt;Index&lt;/code&gt; page shows all your page list in section hierarchy.&lt;/p&gt;
+
+&lt;p&gt;To add &lt;code&gt;index&lt;/code&gt; page to your site, follow these steps:&lt;/p&gt;
+
+&lt;p&gt;1) Create &lt;code&gt;index/_dummy&lt;/code&gt; page by &lt;code&gt;hugo new&lt;/code&gt; command:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ hugo new index/_dummy.md
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;2) Add an entry of &lt;code&gt;[[menu.main]]&lt;/code&gt; in config file which links to &lt;code&gt;index&lt;/code&gt;:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-toml&#34;&gt;# config.toml
+[[menu.main]]
+  name   = &amp;quot;Index&amp;quot;
+  url    = &amp;quot;/index/&amp;quot;
+  weight = 900
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;categorize-and-tagging-pages&#34;&gt;Categorize and Tagging pages&lt;/h2&gt;
+
+&lt;p&gt;You can add one or more &lt;em&gt;categories&lt;/em&gt; and &lt;em&gt;tags&lt;/em&gt; to pages.&lt;/p&gt;
+
+&lt;p&gt;All category list appears as drop-down menu at the header navigation bar.&lt;br /&gt;
+If you set &lt;code&gt;params.noCategoryLink&lt;/code&gt; true in your &lt;code&gt;config.toml&lt;/code&gt;, the drop-down menu disappears:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-toml&#34;&gt;[params]
+  noCategoryLink = true
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;add-search-form-by-google&#34;&gt;Add Search Form by Google&lt;/h2&gt;
+
+&lt;p&gt;You can add &lt;strong&gt;search form&lt;/strong&gt; on navbar by adding configuration param &lt;code&gt;params.searchDomain&lt;/code&gt;:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-toml&#34;&gt;# config.toml
+[params]
+  searchDomain = &amp;quot;your-domain.org&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;This adds search form using Google site search.&lt;/p&gt;
+
+&lt;h2 id=&#34;other-configurations&#34;&gt;Other Configurations&lt;/h2&gt;
+
+&lt;p&gt;Here is an example of &lt;code&gt;config.toml&lt;/code&gt; including all customizable parameters for this
+theme:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-toml&#34;&gt;baseurl   = &amp;quot;http://your-domain.org&amp;quot;
+title     = &amp;quot;Your Site&amp;quot;
+theme     = &amp;quot;bootie-docs&amp;quot;
+copyright = &amp;quot;Copyright (c) 2017, Your Name; All rights reserved.&amp;quot;
+
+[params]
+  description    = &amp;quot;Brief description for your site.&amp;quot;
+  withSitePosts  = true
+  searchDomain   = &amp;quot;your-domain.org&amp;quot;
+  #noCategoryLink = true
+  repositoryUrl  = &amp;quot;http://your-repository-url&amp;quot;
+  highlightStyle = &amp;quot;github&amp;quot;
+
+[[menu.main]]
+  name   = &amp;quot;About&amp;quot;
+  url    = &amp;quot;/about/&amp;quot;
+  weight = 100
+
+[[menu.main]]
+  name   = &amp;quot;Usage&amp;quot;
+  url    = &amp;quot;/usage/&amp;quot;
+  weight = 200
+
+[[menu.main]]
+  name   = &amp;quot;Index&amp;quot;
+  url    = &amp;quot;/index/&amp;quot;
+  weight = 900
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Title&lt;/strong&gt; is shown in header navigation bar and on top page.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Copyright&lt;/strong&gt; is shown in footer (optional).&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Params.description&lt;/strong&gt; is shown on top page.&lt;/li&gt;
+&lt;li&gt;When &lt;strong&gt;params.withSitePosts&lt;/strong&gt; is set true, a link appears on top page which leads
+you to the listing page of the posts in your site under the &lt;code&gt;post/&lt;/code&gt; directory.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Params.repositoryUrl&lt;/strong&gt; is shown in footer (optional).&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Params.highlightStyle&lt;/strong&gt; is used to change the style of &lt;code&gt;highlight.js&lt;/code&gt;.&lt;br /&gt;
+You can find available styles in
+&lt;a href=&#34;https://github.com/key-amb/hugo-theme-bootie-docs/tree/master/static/css/highlight&#34;&gt;static/css/highlight&lt;/a&gt;
+directory.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
     
     <item>
       <title>About</title>
@@ -30,124 +166,6 @@
 &lt;/ul&gt;
 
 &lt;p&gt;See also README of &lt;a href=&#34;https://github.com/key-amb/hugo-theme-bootie-docs&#34;&gt;Bootie Docs&lt;/a&gt;.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Usage</title>
-      <link>http://key-amb.github.io/bootie-docs-demo/usage/</link>
-      <pubDate>Sat, 07 May 2016 07:17:07 +0900</pubDate>
-      
-      <guid>http://key-amb.github.io/bootie-docs-demo/usage/</guid>
-      <description>
-
-&lt;h2 id=&#34;add-more-document-pages&#34;&gt;Add more document pages&lt;/h2&gt;
-
-&lt;p&gt;You can create more pages by &lt;code&gt;hugo new&lt;/code&gt; command.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;$ hugo new page-name.md
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;If you want to quick access for the page, you can include it in &lt;em&gt;navigation bar&lt;/em&gt;
-in header by adding an entry of &lt;code&gt;[[params.mainMenu]]&lt;/code&gt; in your &lt;code&gt;config.toml&lt;/code&gt; (or
-&lt;em&gt;config.yaml&lt;/em&gt;):&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;# config.toml
-[[params.mainMenu]]
-  name = &amp;quot;&amp;lt;Text to show&amp;gt;&amp;quot;
-  link = &amp;quot;&amp;lt;relative-path-to-page&amp;gt;&amp;quot;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Then you can access the page by link in navigation bar at header of the site.&lt;/p&gt;
-
-&lt;p&gt;Before &lt;strong&gt;v1.0.3&lt;/strong&gt;, the link name must be same to page name just under &lt;code&gt;content/&lt;/code&gt;
-directory.&lt;br /&gt;
-After &lt;strong&gt;v1.1.0&lt;/strong&gt;, you can add menu to any page in the site by the format above.&lt;/p&gt;
-
-&lt;h2 id=&#34;add-index-page&#34;&gt;Add Index Page&lt;/h2&gt;
-
-&lt;p&gt;&lt;code&gt;Index&lt;/code&gt; page shows all your page list in section hierarchy.&lt;/p&gt;
-
-&lt;p&gt;To add &lt;code&gt;index&lt;/code&gt; page to your site, follow these steps:&lt;/p&gt;
-
-&lt;p&gt;1) Create &lt;code&gt;index/_dummy&lt;/code&gt; page by &lt;code&gt;hugo new&lt;/code&gt; command:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;$ hugo new index/_dummy.md
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;2) Add an entry of &lt;code&gt;[[params.mainMenu]]&lt;/code&gt; in config file which links to &lt;code&gt;index&lt;/code&gt;:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;# config.toml
-[[params.mainMenu]
-  name = &amp;quot;Index&amp;quot;
-  link = &amp;quot;index/&amp;quot;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h2 id=&#34;categorize-and-tagging-pages&#34;&gt;Categorize and Tagging pages&lt;/h2&gt;
-
-&lt;p&gt;You can add one or more &lt;em&gt;categories&lt;/em&gt; and &lt;em&gt;tags&lt;/em&gt; to pages.&lt;/p&gt;
-
-&lt;p&gt;All category list appears as drop-down menu at the header navigation bar.&lt;br /&gt;
-If you set &lt;code&gt;params.noCategoryLink&lt;/code&gt; true in your &lt;code&gt;config.toml&lt;/code&gt;, the drop-down menu disappears:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;[params]
-  noCategoryLink = true
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h2 id=&#34;add-search-form-by-google&#34;&gt;Add Search Form by Google&lt;/h2&gt;
-
-&lt;p&gt;You can add &lt;strong&gt;search form&lt;/strong&gt; on navbar by adding configuration param &lt;code&gt;params.searchDomain&lt;/code&gt;:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;# config.toml
-[params]
-  searchDomain = &amp;quot;your-domain.org&amp;quot;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;This adds search form using Google site search.&lt;/p&gt;
-
-&lt;h2 id=&#34;other-configurations&#34;&gt;Other Configurations&lt;/h2&gt;
-
-&lt;p&gt;Here is an example of &lt;code&gt;config.toml&lt;/code&gt; including all customizable parameters for this
-theme:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;baseurl = &amp;quot;http://your-domain.org&amp;quot;
-title = &amp;quot;Your Site&amp;quot;
-theme = &amp;quot;bootie-docs&amp;quot;
-copyright = &amp;quot;Copyright (c) 2015, Your Name; All rights reserved.&amp;quot;
-
-[params]
-  description = &amp;quot;Brief description for your site.&amp;quot;
-  withSitePosts = true
-  searchDomain = &amp;quot;your-domain.org&amp;quot;
-  #noCategoryLink = true
-  repositoryUrl = &amp;quot;http://your-repository-url&amp;quot;
-  highlightStyle = &amp;quot;github&amp;quot;
-
-[[params.mainMenu]]
-  name = &amp;quot;About&amp;quot;
-  link = &amp;quot;about/&amp;quot;
-
-[[params.mainMenu]]
-  name = &amp;quot;Usage&amp;quot;
-  link = &amp;quot;usage/&amp;quot;
-
-[[params.mainMenu]]
-  name = &amp;quot;Index&amp;quot;
-  link = &amp;quot;index/&amp;quot;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Title&lt;/strong&gt; is shown in header navigation bar and on top page.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Copyright&lt;/strong&gt; is shown in footer (optional).&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Params.description&lt;/strong&gt; is shown on top page.&lt;/li&gt;
-&lt;li&gt;When &lt;strong&gt;params.withSitePosts&lt;/strong&gt; is set true, a link appears on top page which leads
-you to the listing page of the posts in your site under the &lt;code&gt;post/&lt;/code&gt; directory.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Params.repositoryUrl&lt;/strong&gt; is shown in footer (optional).&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Params.highlightStyle&lt;/strong&gt; is used to change the style of &lt;code&gt;highlight.js&lt;/code&gt;.&lt;br /&gt;
-You can find available styles in
-&lt;a href=&#34;https://github.com/key-amb/hugo-theme-bootie-docs/tree/master/static/css/highlight&#34;&gt;static/css/highlight&lt;/a&gt;
-directory.&lt;/li&gt;
-&lt;/ul&gt;
 </description>
     </item>
     

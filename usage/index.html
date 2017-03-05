@@ -35,14 +35,11 @@
 			
 			
 				
-					
-					<li ><a href="http://key-amb.github.io/bootie-docs-demo/about/">About</a></li>
+					<li ><a href="/bootie-docs-demo/about/">About</a></li>
 				
-					
-					<li class="active"><a href="http://key-amb.github.io/bootie-docs-demo/usage/">Usage</a></li>
+					<li class="active"><a href="/bootie-docs-demo/usage/">Usage</a></li>
 				
-					
-					<li ><a href="http://key-amb.github.io/bootie-docs-demo/index/">Index</a></li>
+					<li ><a href="/bootie-docs-demo/index/">Index</a></li>
 				
 			
 				
@@ -83,10 +80,14 @@
 				<a id="title"></a>
 				<h1 class="doc-entry-title">Usage</h1>
 				<div class="doc-entry-meta">
-					<span><time datetime="2016-05-07">May 07, 2016</time></span>
+					<span><time datetime="2017-03-05">March 05, 2017</time></span>
 				</div>
 				<section>
 					
+
+<h2 id="getting-started">Getting Started</h2>
+
+<p>See the <a href="../#quickstart">Quickstart guide at Home</a> before reading the following contents.</p>
 
 <h2 id="add-more-document-pages">Add more document pages</h2>
 
@@ -95,21 +96,31 @@
 <pre><code>$ hugo new page-name.md
 </code></pre>
 
-<p>If you want to quick access for the page, you can include it in <em>navigation bar</em>
-in header by adding an entry of <code>[[params.mainMenu]]</code> in your <code>config.toml</code> (or
+<p>If you want to quick access for the page, you can utilize Hugo&rsquo;s built-in
+<a href="https://gohugo.io/extras/menus/">Menu System</a> to customize <em>navigation bar</em> in
+header.</p>
+
+<p>For this purpose, add an entry of <code>[[menu.main]]</code> in your <code>config.toml</code> (or
 <em>config.yaml</em>):</p>
 
-<pre><code># config.toml
-[[params.mainMenu]]
+<pre><code class="language-toml"># config.toml
+[[menu.main]]
   name = &quot;&lt;Text to show&gt;&quot;
-  link = &quot;&lt;relative-path-to-page&gt;&quot;
+  url  = &quot;&lt;relative-path-to-page&gt;&quot;
+  weight = &lt;integer value&gt;
 </code></pre>
 
 <p>Then you can access the page by link in navigation bar at header of the site.</p>
 
-<p>Before <strong>v1.0.3</strong>, the link name must be same to page name just under <code>content/</code>
-directory.<br />
-After <strong>v1.1.0</strong>, you can add menu to any page in the site by the format above.</p>
+<p>See Hugo&rsquo;s documentation for more options of <em>Menu System</em>.</p>
+
+<p>NOTE:</p>
+
+<ul>
+<li>Before <strong>v1.3.0</strong>, <code>[[menu.main]]</code> is not supported. Instead,
+<code>[[params.mainMenu]]</code> is used for navigation menu.</li>
+<li>Nested menus are not supported.</li>
+</ul>
 
 <h2 id="add-index-page">Add Index Page</h2>
 
@@ -122,12 +133,13 @@ After <strong>v1.1.0</strong>, you can add menu to any page in the site by the f
 <pre><code>$ hugo new index/_dummy.md
 </code></pre>
 
-<p>2) Add an entry of <code>[[params.mainMenu]]</code> in config file which links to <code>index</code>:</p>
+<p>2) Add an entry of <code>[[menu.main]]</code> in config file which links to <code>index</code>:</p>
 
-<pre><code># config.toml
-[[params.mainMenu]
-  name = &quot;Index&quot;
-  link = &quot;index/&quot;
+<pre><code class="language-toml"># config.toml
+[[menu.main]]
+  name   = &quot;Index&quot;
+  url    = &quot;/index/&quot;
+  weight = 900
 </code></pre>
 
 <h2 id="categorize-and-tagging-pages">Categorize and Tagging pages</h2>
@@ -137,7 +149,7 @@ After <strong>v1.1.0</strong>, you can add menu to any page in the site by the f
 <p>All category list appears as drop-down menu at the header navigation bar.<br />
 If you set <code>params.noCategoryLink</code> true in your <code>config.toml</code>, the drop-down menu disappears:</p>
 
-<pre><code>[params]
+<pre><code class="language-toml">[params]
   noCategoryLink = true
 </code></pre>
 
@@ -145,7 +157,7 @@ If you set <code>params.noCategoryLink</code> true in your <code>config.toml</co
 
 <p>You can add <strong>search form</strong> on navbar by adding configuration param <code>params.searchDomain</code>:</p>
 
-<pre><code># config.toml
+<pre><code class="language-toml"># config.toml
 [params]
   searchDomain = &quot;your-domain.org&quot;
 </code></pre>
@@ -157,30 +169,33 @@ If you set <code>params.noCategoryLink</code> true in your <code>config.toml</co
 <p>Here is an example of <code>config.toml</code> including all customizable parameters for this
 theme:</p>
 
-<pre><code>baseurl = &quot;http://your-domain.org&quot;
-title = &quot;Your Site&quot;
-theme = &quot;bootie-docs&quot;
-copyright = &quot;Copyright (c) 2015, Your Name; All rights reserved.&quot;
+<pre><code class="language-toml">baseurl   = &quot;http://your-domain.org&quot;
+title     = &quot;Your Site&quot;
+theme     = &quot;bootie-docs&quot;
+copyright = &quot;Copyright (c) 2017, Your Name; All rights reserved.&quot;
 
 [params]
-  description = &quot;Brief description for your site.&quot;
-  withSitePosts = true
-  searchDomain = &quot;your-domain.org&quot;
+  description    = &quot;Brief description for your site.&quot;
+  withSitePosts  = true
+  searchDomain   = &quot;your-domain.org&quot;
   #noCategoryLink = true
-  repositoryUrl = &quot;http://your-repository-url&quot;
+  repositoryUrl  = &quot;http://your-repository-url&quot;
   highlightStyle = &quot;github&quot;
 
-[[params.mainMenu]]
-  name = &quot;About&quot;
-  link = &quot;about/&quot;
+[[menu.main]]
+  name   = &quot;About&quot;
+  url    = &quot;/about/&quot;
+  weight = 100
 
-[[params.mainMenu]]
-  name = &quot;Usage&quot;
-  link = &quot;usage/&quot;
+[[menu.main]]
+  name   = &quot;Usage&quot;
+  url    = &quot;/usage/&quot;
+  weight = 200
 
-[[params.mainMenu]]
-  name = &quot;Index&quot;
-  link = &quot;index/&quot;
+[[menu.main]]
+  name   = &quot;Index&quot;
+  url    = &quot;/index/&quot;
+  weight = 900
 </code></pre>
 
 <ul>
@@ -215,6 +230,7 @@ directory.</li>
 <ul>
 <li>
 <ul>
+<li><a href="#getting-started">Getting Started</a></li>
 <li><a href="#add-more-document-pages">Add more document pages</a></li>
 <li><a href="#add-index-page">Add Index Page</a></li>
 <li><a href="#categorize-and-tagging-pages">Categorize and Tagging pages</a></li>
@@ -282,7 +298,7 @@ directory.</li>
 
 <footer class="doc-footer">
 	<p class="doc-footer-em">Browse <strong><a href="https://github.com/key-amb/bootie-docs-demo/">Repository</a></strong></p>
-	<p>Copyright (c) 2015-2016, YASUTAKE Kiyoshi; All rights reserved.</p>
+	<p>Copyright (c) 2015-2017, IKEDA Kiyoshi; All rights reserved.</p>
 	<p>Powered by <strong><a href="https://github.com/key-amb/hugo-theme-bootie-docs">Bootie Docs</a></strong> - theme for <a href="http://gohugo.io/">Hugo</a> by <a href="https://github.com/key-amb/">key-amb</a>.</p>
 </footer>
 
