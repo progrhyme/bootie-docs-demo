@@ -11,6 +11,30 @@
     <atom:link href="http://key-amb.github.io/bootie-docs-demo/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>About</title>
+      <link>http://key-amb.github.io/bootie-docs-demo/about/</link>
+      <pubDate>Sun, 05 Mar 2017 10:32:21 +0900</pubDate>
+      
+      <guid>http://key-amb.github.io/bootie-docs-demo/about/</guid>
+      <description>
+
+&lt;h2 id=&#34;version&#34;&gt;Version&lt;/h2&gt;
+
+&lt;p&gt;1.3.0&lt;/p&gt;
+
+&lt;h2 id=&#34;dependencies&#34;&gt;Dependencies&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://getbootstrap.com/&#34;&gt;Bootstrap&lt;/a&gt; &amp;hellip; Well-known CSS framework.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://jquery.com/&#34;&gt;jQuery&lt;/a&gt; &amp;hellip; Requried by &lt;em&gt;Bootstrap&lt;/em&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://highlightjs.org/&#34;&gt;highlight.js&lt;/a&gt; &amp;hellip; For syntax highlighting.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;See also README of &lt;a href=&#34;https://github.com/key-amb/hugo-theme-bootie-docs&#34;&gt;Bootie Docs&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Usage</title>
       <link>http://key-amb.github.io/bootie-docs-demo/usage/</link>
       <pubDate>Sun, 05 Mar 2017 10:25:07 +0900</pubDate>
@@ -50,9 +74,9 @@ header.&lt;/p&gt;
 &lt;p&gt;NOTE:&lt;/p&gt;
 
 &lt;ul&gt;
+&lt;li&gt;Nested menus are not supported.&lt;/li&gt;
 &lt;li&gt;Before &lt;strong&gt;v1.3.0&lt;/strong&gt;, &lt;code&gt;[[menu.main]]&lt;/code&gt; is not supported. Instead,
 &lt;code&gt;[[params.mainMenu]]&lt;/code&gt; is used for navigation menu.&lt;/li&gt;
-&lt;li&gt;Nested menus are not supported.&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h2 id=&#34;add-index-page&#34;&gt;Add Index Page&lt;/h2&gt;
@@ -143,30 +167,6 @@ You can find available styles in
 &lt;a href=&#34;https://github.com/key-amb/hugo-theme-bootie-docs/tree/master/static/css/highlight&#34;&gt;static/css/highlight&lt;/a&gt;
 directory.&lt;/li&gt;
 &lt;/ul&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>About</title>
-      <link>http://key-amb.github.io/bootie-docs-demo/about/</link>
-      <pubDate>Wed, 11 Jan 2017 00:45:21 +0900</pubDate>
-      
-      <guid>http://key-amb.github.io/bootie-docs-demo/about/</guid>
-      <description>
-
-&lt;h2 id=&#34;version&#34;&gt;Version&lt;/h2&gt;
-
-&lt;p&gt;1.2.0&lt;/p&gt;
-
-&lt;h2 id=&#34;dependencies&#34;&gt;Dependencies&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://getbootstrap.com/&#34;&gt;Bootstrap&lt;/a&gt; &amp;hellip; Well-known CSS framework.&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://jquery.com/&#34;&gt;jQuery&lt;/a&gt; &amp;hellip; Requried by &lt;em&gt;Bootstrap&lt;/em&gt;.&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://highlightjs.org/&#34;&gt;highlight.js&lt;/a&gt; &amp;hellip; For syntax highlighting.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;See also README of &lt;a href=&#34;https://github.com/key-amb/hugo-theme-bootie-docs&#34;&gt;Bootie Docs&lt;/a&gt;.&lt;/p&gt;
 </description>
     </item>
     

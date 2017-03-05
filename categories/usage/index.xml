@@ -49,9 +49,9 @@ header.&lt;/p&gt;
 &lt;p&gt;NOTE:&lt;/p&gt;
 
 &lt;ul&gt;
+&lt;li&gt;Nested menus are not supported.&lt;/li&gt;
 &lt;li&gt;Before &lt;strong&gt;v1.3.0&lt;/strong&gt;, &lt;code&gt;[[menu.main]]&lt;/code&gt; is not supported. Instead,
 &lt;code&gt;[[params.mainMenu]]&lt;/code&gt; is used for navigation menu.&lt;/li&gt;
-&lt;li&gt;Nested menus are not supported.&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h2 id=&#34;add-index-page&#34;&gt;Add Index Page&lt;/h2&gt;
