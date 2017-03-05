@@ -1,25 +1,26 @@
-baseurl = "http://key-amb.github.io/bootie-docs-demo"
+baseurl      = "http://key-amb.github.io/bootie-docs-demo"
 languageCode = "en-us"
-title = "Bootie Docs"
-theme = "bootie-docs"
-copyright = "Copyright (c) 2015-2017, IKEDA Kiyoshi; All rights reserved."
+title        = "Bootie Docs"
+theme        = "bootie-docs"
+copyright    = "Copyright (c) 2015-2017, IKEDA Kiyoshi; All rights reserved."
 
 [params]
-  description = "A simple Hugo theme for documentation."
-  withSitePosts = true
-  searchDomain = "key-amb.github.io/bootie-docs-demo"
+  description    = "A simple Hugo theme for documentation."
+  withSitePosts  = true
+  searchDomain   = "key-amb.github.io/bootie-docs-demo"
   #noCategoryLink = true
-  repositoryUrl = "https://github.com/key-amb/bootie-docs-demo/"
+  repositoryUrl  = "https://github.com/key-amb/bootie-docs-demo/"
   highlightStyle = "magula"
 
-[[params.mainMenu]]
-  name = "About"
-  link = "about/"
-
-[[params.mainMenu]]
-  name = "Usage"
-  link = "usage/"
-
-[[params.mainMenu]]
-  name = "Index"
-  link = "index/"
+[[menu.main]]
+  name   = "About"
+  url    = "/about/"
+  weight = 20
+[[menu.main]]
+  name   = "Usage"
+  url    = "/usage/"
+  weight = 30
+[[menu.main]]
+  name   = "Index"
+  url    = "/index/"
+  weight = 90
