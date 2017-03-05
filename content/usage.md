@@ -133,3 +133,8 @@ you to the listing page of the posts in your site under the `post/` directory.
 You can find available styles in
 [static/css/highlight](https://github.com/key-amb/hugo-theme-bootie-docs/tree/master/static/css/highlight)
 directory.
+
+## Add site-customized CSS
+
+You can add styles to customize site's UI into file: `static/css/site.css`.  
+The CSS is loaded by _Bootie Docs_.
