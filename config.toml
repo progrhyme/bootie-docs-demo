@@ -2,7 +2,7 @@ baseurl = "http://key-amb.github.io/bootie-docs-demo"
 languageCode = "en-us"
 title = "Bootie Docs"
 theme = "bootie-docs"
-copyright = "Copyright (c) 2015-2016, YASUTAKE Kiyoshi; All rights reserved."
+copyright = "Copyright (c) 2015-2017, IKEDA Kiyoshi; All rights reserved."
 
 [params]
   description = "A simple Hugo theme for documentation."
