@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories on Bootie Docs</title>
+    <link>http://key-amb.github.io/bootie-docs-demo/categories/</link>
+    <description>Recent content in Categories on Bootie Docs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Copyright (c) 2015-2017, IKEDA Kiyoshi; All rights reserved.</copyright>
+    
+	<atom:link href="http://key-amb.github.io/bootie-docs-demo/categories/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Info</title>
+      <link>http://key-amb.github.io/bootie-docs-demo/categories/info/</link>
+      <pubDate>Sun, 21 May 2017 20:02:21 +0900</pubDate>
+      
+      <guid>http://key-amb.github.io/bootie-docs-demo/categories/info/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Usage</title>
+      <link>http://key-amb.github.io/bootie-docs-demo/categories/usage/</link>
+      <pubDate>Sun, 05 Mar 2017 10:25:07 +0900</pubDate>
+      
+      <guid>http://key-amb.github.io/bootie-docs-demo/categories/usage/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
