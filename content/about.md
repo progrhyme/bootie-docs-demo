@@ -1,5 +1,5 @@
 +++
-date = "2017-05-21T20:02:21+09:00"
+date = "2017-07-20T22:39:00+09:00"
 title = "About"
 categories = ["info"]
 tags = ["document"]
@@ -7,7 +7,7 @@ tags = ["document"]
 
 ## Version
 
-1.3.2
+1.4.0
 
 ## Dependencies
 
