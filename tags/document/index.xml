@@ -2,32 +2,32 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Document on Bootie Docs</title>
-    <link>http://key-amb.github.io/bootie-docs-demo/tags/document/</link>
+    <link>https://progrhyme.github.io/bootie-docs-demo/tags/document/</link>
     <description>Recent content in Document on Bootie Docs</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright (c) 2015-2017, IKEDA Kiyoshi; All rights reserved.</copyright>
     <lastBuildDate>Sun, 21 May 2017 20:02:21 +0900</lastBuildDate>
     
-	<atom:link href="http://key-amb.github.io/bootie-docs-demo/tags/document/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://progrhyme.github.io/bootie-docs-demo/tags/document/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>About</title>
-      <link>http://key-amb.github.io/bootie-docs-demo/about/</link>
+      <link>https://progrhyme.github.io/bootie-docs-demo/about/</link>
       <pubDate>Sun, 21 May 2017 20:02:21 +0900</pubDate>
       
-      <guid>http://key-amb.github.io/bootie-docs-demo/about/</guid>
+      <guid>https://progrhyme.github.io/bootie-docs-demo/about/</guid>
       <description>Version 1.3.2
 Dependencies  Bootstrap &amp;hellip; Well-known CSS framework. jQuery &amp;hellip; Requried by Bootstrap. highlight.js &amp;hellip; For syntax highlighting.  See also README of Bootie Docs.</description>
     </item>
     
     <item>
       <title>Usage</title>
-      <link>http://key-amb.github.io/bootie-docs-demo/usage/</link>
+      <link>https://progrhyme.github.io/bootie-docs-demo/usage/</link>
       <pubDate>Sun, 05 Mar 2017 10:25:07 +0900</pubDate>
       
-      <guid>http://key-amb.github.io/bootie-docs-demo/usage/</guid>
+      <guid>https://progrhyme.github.io/bootie-docs-demo/usage/</guid>
       <description>Getting Started See the Quickstart guide at Home before reading the following contents.
 Add more document pages You can create more pages by hugo new command.
 $ hugo new page-name.md  If you want to quick access for the page, you can utilize Hugo&amp;rsquo;s built-in Menu System to customize navigation bar in header.

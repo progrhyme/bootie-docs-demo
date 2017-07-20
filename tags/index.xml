@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Bootie Docs</title>
-    <link>http://key-amb.github.io/bootie-docs-demo/tags/</link>
+    <link>https://progrhyme.github.io/bootie-docs-demo/tags/</link>
     <description>Recent content in Tags on Bootie Docs</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright (c) 2015-2017, IKEDA Kiyoshi; All rights reserved.</copyright>
     <lastBuildDate>Sun, 05 Mar 2017 10:25:07 +0900</lastBuildDate>
     
-	<atom:link href="http://key-amb.github.io/bootie-docs-demo/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://progrhyme.github.io/bootie-docs-demo/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Config</title>
-      <link>http://key-amb.github.io/bootie-docs-demo/tags/config/</link>
+      <link>https://progrhyme.github.io/bootie-docs-demo/tags/config/</link>
       <pubDate>Sun, 05 Mar 2017 10:25:07 +0900</pubDate>
       
-      <guid>http://key-amb.github.io/bootie-docs-demo/tags/config/</guid>
+      <guid>https://progrhyme.github.io/bootie-docs-demo/tags/config/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Document</title>
-      <link>http://key-amb.github.io/bootie-docs-demo/tags/document/</link>
+      <link>https://progrhyme.github.io/bootie-docs-demo/tags/document/</link>
       <pubDate>Sun, 21 May 2017 20:02:21 +0900</pubDate>
       
-      <guid>http://key-amb.github.io/bootie-docs-demo/tags/document/</guid>
+      <guid>https://progrhyme.github.io/bootie-docs-demo/tags/document/</guid>
       <description></description>
     </item>
     
