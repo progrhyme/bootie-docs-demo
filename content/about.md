@@ -15,4 +15,4 @@ tags = ["document"]
 * [jQuery](https://jquery.com/) ... Requried by _Bootstrap_.
 * [highlight.js](https://highlightjs.org/) ... For syntax highlighting.
 
-See also README of [Bootie Docs](https://github.com/key-amb/hugo-theme-bootie-docs).
+See also README of [Bootie Docs](https://github.com/progrhyme/hugo-theme-bootie-docs).

@@ -5,7 +5,7 @@ title = "_index"
 
 ## Introduction
 
-[Bootie Docs](https://github.com/key-amb/hugo-theme-bootie-docs) is a theme for [Hugo](http://gohugo.io).
+[Bootie Docs](https://github.com/progrhyme/hugo-theme-bootie-docs) is a theme for [Hugo](http://gohugo.io).
 Follow the instructions on Hugo site to install _Hugo_ and _Hugo Themes_.
 
 This theme is developed to be a suitable one for documentation, especially for software documentation.
@@ -20,7 +20,7 @@ Suppose you already installed **Hugo**.
 hugo new site /path/to/site
 cd /path/to/site
 mkdir themes
-git clone https://github.com/key-amb/hugo-theme-bootie-docs.git themes/bootie-docs
+git clone https://github.com/progrhyme/hugo-theme-bootie-docs.git themes/bootie-docs
 # add some contents to your site
 hugo server -t bootie-docs
 ```

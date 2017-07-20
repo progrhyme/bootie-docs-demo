@@ -1,4 +1,4 @@
-baseurl      = "http://key-amb.github.io/bootie-docs-demo"
+baseurl      = "https://progrhyme.github.io/bootie-docs-demo"
 languageCode = "en-us"
 title        = "Bootie Docs"
 theme        = "bootie-docs"
@@ -7,9 +7,9 @@ copyright    = "Copyright (c) 2015-2017, IKEDA Kiyoshi; All rights reserved."
 [params]
   description    = "A simple Hugo theme for documentation."
   withSitePosts  = true
-  searchDomain   = "key-amb.github.io/bootie-docs-demo"
+  searchDomain   = "progrhyme.github.io/bootie-docs-demo"
   #noCategoryLink = true
-  repositoryUrl  = "https://github.com/key-amb/bootie-docs-demo/"
+  repositoryUrl  = "https://github.com/progrhyme/bootie-docs-demo/"
   highlightStyle = "magula"
 
 [[menu.main]]

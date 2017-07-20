@@ -131,7 +131,7 @@ you to the listing page of the posts in your site under the `post/` directory.
 * **Params.repositoryUrl** is shown in footer (optional).
 * **Params.highlightStyle** is used to change the style of `highlight.js`.  
 You can find available styles in
-[static/css/highlight](https://github.com/key-amb/hugo-theme-bootie-docs/tree/master/static/css/highlight)
+[static/css/highlight](https://github.com/progrhyme/hugo-theme-bootie-docs/tree/master/static/css/highlight)
 directory.
 
 ## Add site-customized CSS
