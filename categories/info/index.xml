@@ -7,7 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright (c) 2015-2017, IKEDA Kiyoshi; All rights reserved.</copyright>
-    <lastBuildDate>Thu, 20 Jul 2017 22:39:00 +0900</lastBuildDate>
+    <lastBuildDate>Sun, 30 Jul 2017 19:40:00 +0900</lastBuildDate>
     
 	<atom:link href="https://progrhyme.github.io/bootie-docs-demo/categories/info/index.xml" rel="self" type="application/rss+xml" />
     
@@ -15,10 +15,10 @@
     <item>
       <title>About</title>
       <link>https://progrhyme.github.io/bootie-docs-demo/about/</link>
-      <pubDate>Thu, 20 Jul 2017 22:39:00 +0900</pubDate>
+      <pubDate>Sun, 30 Jul 2017 19:40:00 +0900</pubDate>
       
       <guid>https://progrhyme.github.io/bootie-docs-demo/about/</guid>
-      <description>Version 1.4.0
+      <description>Version 1.5.0
 Dependencies  Bootstrap &amp;hellip; Well-known CSS framework. jQuery &amp;hellip; Requried by Bootstrap. highlight.js &amp;hellip; For syntax highlighting.  See also README of Bootie Docs.</description>
     </item>
     
