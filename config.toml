@@ -1,4 +1,4 @@
-baseurl      = "https://progrhyme.github.io/bootie-docs-demo"
+baseurl      = "https://progrhy.me/bootie-docs-demo"
 languageCode = "en-us"
 title        = "Bootie Docs"
 theme        = "bootie-docs"
